@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+
+Sitemap: http://192.168.33.10/hulpstation.nl/sitemap.xml
+User-agent:*
+Disallow

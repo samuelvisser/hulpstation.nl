@@ -1,0 +1,1802 @@
+/*============================================================================================================================
+	Haal new style guide weg zodra alles nieuw is 
+	
+*============================================================================================================================ */
+
+/*============================================================================================================================
+Window general styling...
+==============================================================================================================================*/
+
+._new-style-guide *{
+    /*-webkit-user-select: none; */
+    /*        user-select: none; */
+            
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			
+	-webkit-appearance: none;
+	
+	outline: none;
+		
+	xbackground: rgba(0,0,0,0.08);			
+}
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,strong,em,pre,p,b,blockquote,cite,code,fieldset,legend,input,textarea,param,dl,dd,dt,kbd,samp,var,tt,td {
+    -webkit-user-select: text;
+            user-select: text;
+}	
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+
+
+
+/* #FBA100 = Huisstijlkleur */
+/* #574A46 = Huisstijlkleur semi */
+/* #EBE6E1 = Achtergrond kleur */
+/* url(../img/sprite_hulpstation.svg) = sprite */
+
+/*============================================================================================================================
+Body styling...
+==============================================================================================================================*/
+
+html > body._new-style-guide,
+._new-style-guide { 
+    background: #FFFFFF; 
+    color: #574A46; /* Huisstijlkleur semi */ 
+    font-family: 'Gotham', arial; /* Het font */
+    font-size: 17px;
+    font-weight: 300;  
+    text-align: left; 
+    position: relative;
+}
+
+html > body._new-style-guide { background-color: #FFFFFF; }
+
+/*============================================================================================================================
+Row en container...
+==============================================================================================================================*/
+._container,
+._row {
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+	._container {
+		max-width: 767px;
+		overflow: hidden;
+	}
+
+	._row {
+		position: relative;
+		float: left;
+	}
+
+._inner-col {
+	margin-left: -25px;
+	margin-right: -25px;
+}
+
+/*============================================================================================================================
+12, 6, 4, 3, 2 grid... Global col styling... (12 col grid)
+==============================================================================================================================*/
+
+._col-l-12, ._col-l-11, ._col-l-10, ._col-l-9, ._col-l-8, ._col-l-7, ._col-l-6, ._col-l-5, ._col-l-4, ._col-l-3, ._col-l-2, ._col-l-1, ._col-l-0, 
+._col-m-12, ._col-m-11, ._col-m-10, ._col-m-9, ._col-m-8, ._col-m-7, ._col-m-6, ._col-m-5, ._col-m-4, ._col-m-3, ._col-m-2, ._col-m-1, ._col-m-0, 
+._col-s-12, ._col-s-11, ._col-s-10, ._col-s-9, ._col-s-8, ._col-s-7, ._col-s-6, ._col-s-5, ._col-s-4, ._col-s-3, ._col-s-2, ._col-s-1, ._col-s-0 { 
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0 25px;
+	clear: none;
+	display: block;
+}
+
+._float-right {
+	float: right;
+}
+
+/*============================================================================================================================
+Col s = small (Phone)...
+==============================================================================================================================*/
+
+._col-l-12 { width: 100%; }
+._col-l-11 { width: 100%; } /*width: 91.667% */
+._col-l-10 { width: 100%; } /*width: 83.333% */
+._col-l-9 { width: 100%; } /*width: 75% */
+._col-l-8 { width: 100%; } /*width: 66.667% */
+._col-l-7 { width: 100%; } /*width: 58.333% */
+._col-l-6 { width: 100%; } /*width: 50% */
+._col-l-5 { width: 100%; } /*width: 41.667% */
+._col-l-4 { width: 100%; } /*width: 33.333% */
+._col-l-3 { width: 100%; } /*width: 25% */
+._col-l-2 { width: 100%; } /*width: 16.667% */
+._col-l-1 { width: 100%; } /*width: 8.333% */
+._col-l-0 { width: 0%; }
+
+
+/* medium */
+._col-m-12 { width: 100%; }
+._col-m-11 { width: 100%; } /*width: 91.667% */
+._col-m-10 { width: 100%; } /*width: 83.333% */
+._col-m-9 { width: 100%; } /*width: 75% */
+._col-m-8 { width: 100%; } /*width: 66.667% */
+._col-m-7 { width: 100%; } /*width: 58.333% */
+._col-m-6 { width: 100%; } /*width: 50% */
+._col-m-5 { width: 100%; } /*width: 41.667% */
+._col-m-4 { width: 100%; } /*width: 33.333% */
+._col-m-3 { width: 50%; } /*width: 25% */
+._col-m-2 { width: 50%; } /*width: 16.667% */
+._col-m-1 { width: 50%; } /*width: 8.333% */
+._col-m-0 { width: 0%; }
+
+/* small */
+._col-s-12 { width: 100%; }
+._col-s-11 { width: 91.667%; }
+._col-s-10 { width: 83.333%; }
+._col-s-9 { width: 75%; }
+._col-s-8 { width: 66.667%; }
+._col-s-7 { width: 58.333%; }
+._col-s-6 { width: 50%; }
+._col-s-5 { width: 41.667%; }
+._col-s-4 { width: 33.333%; }
+._col-s-3 { width: 25%; }
+._col-s-2 { width: 16.667%; }
+._col-s-1 { width: 8.333%; }
+._col-s-0 { width: 0%; }
+
+
+/*============================================================================================================================
+Offset ls = left small margin (Phone) 12 grid...
+==============================================================================================================================*/
+
+._offset-ll-12  { margin-left: 100%; }
+._offset-ll-11 { margin-left: 0%; } /*margin-left: 91.667% */
+._offset-ll-10 { margin-left: 0%; } /*margin-left: 83.333% */
+._offset-ll-9 { margin-left: 0%; } /*margin-left: 75% */
+._offset-ll-8 { margin-left: 0%; } /*margin-left: 66.667% */
+._offset-ll-7 { margin-left: 0%; } /*margin-left: 58.333% */
+._offset-ll-6 { margin-left: 0%; } /*margin-left: 50% */
+._offset-ll-5 { margin-left: 0%; } /*margin-left: 41.667% */
+._offset-ll-4 { margin-left: 0%; } /*margin-left: 33.333% */
+._offset-ll-3 { margin-left: 0%; } /*margin-left: 25% */
+._offset-ll-2 { margin-left: 0%; } /*margin-left: 16.667% */
+._offset-ll-1 { margin-left: 0%; } /*margin-left: 8.333% */
+._offset-ll-0 { margin-left: 0%; }
+
+
+/* medium */
+._offset-lm-12 { margin-left: 100%; }
+._offset-lm-11 { margin-left: 0%; } /*margin-left: 91.667% */
+._offset-lm-10 { margin-left: 0%; } /*margin-left: 83.333% */
+._offset-lm-9 { margin-left: 0%; } /*margin-left: 75% */
+._offset-lm-8 { margin-left: 0%; } /*margin-left: 66.667% */
+._offset-lm-7 { margin-left: 0%; } /*margin-left: 58.333% */
+._offset-lm-6  { margin-left: 0%; } /*margin-left: 50% */
+._offset-lm-5 { margin-left: 0%; } /*margin-left: 41.667% */
+._offset-lm-4  { margin-left: 0%; } /*margin-left: 33.333% */
+._offset-lm-3 { margin-left: 50%; } /*margin-left: 25% */
+._offset-lm-2 { margin-left: 50%; } /*margin-left: 16.667% */
+._offset-lm-1 { margin-left: 50%; } /*margin-left: 8.333% */
+._offset-lm-0  { margin-left: 0%; }
+
+
+/* small */
+._offset-ls-12 { margin-left: 100%; }
+._offset-ls-11 { margin-left: 91.667%; }
+._offset-ls-10 { margin-left: 83.333%; }
+._offset-ls-9 { margin-left: 75%; }
+._offset-ls-8 { margin-left: 66.667%; }
+._offset-ls-7 { margin-left: 58.333%; }
+._offset-ls-6 { margin-left: 50%; }
+._offset-ls-5 { margin-left: 41.667%; }
+._offset-ls-4 { margin-left: 33.333%; }
+._offset-ls-3 { margin-left: 25%; }
+._offset-ls-2 { margin-left: 16.667%; }
+._offset-ls-1 { margin-left: 8.333%; }
+._offset-ls-0 { margin-left: 0%; }
+
+
+/*============================================================================================================================
+Offset rs = right small margin (Phone) 12 grid...
+==============================================================================================================================*/
+
+._offset-rl-12  { margin-right: 100%; }
+._offset-rl-11 { margin-right: 0%; } /*margin-right: 91.667% */
+._offset-rl-10 { margin-right: 0%; } /*margin-right: 83.333% */
+._offset-rl-9 { margin-right: 0%; } /*margin-right: 75% */
+._offset-rl-8 { margin-right: 0%; } /*margin-right: 66.667% */
+._offset-rl-7 { margin-right: 0%; } /*margin-right: 58.333% */
+._offset-rl-6 { margin-right: 0%; } /*margin-right: 50% */
+._offset-rl-5 { margin-right: 0%; } /*margin-right: 41.667% */
+._offset-rl-4 { margin-right: 0%; } /*margin-right: 33.333% */
+._offset-rl-3 { margin-right: 0%; } /*margin-right: 25% */
+._offset-rl-2 { margin-right: 0%; } /*margin-right: 16.667% */
+._offset-rl-1 { margin-right: 0%; } /*margin-right: 8.333% */
+._offset-rl-0  { margin-right: 0%; }
+
+
+/* medium */
+._offset-rm-12  { margin-right: 100%; }
+._offset-rm-11 { margin-right: 0%; } /*margin-right: 91.667% */
+._offset-rm-10 { margin-right: 0%; } /*margin-right: 83.333% */
+._offset-rm-9 { margin-right: 0%; } /*margin-right: 75% */
+._offset-rm-8 { margin-right: 0%; } /*margin-right: 66.667% */
+._offset-rm-7 { margin-right: 0%; } /*margin-right: 58.333% */
+._offset-rm-6 { margin-right: 0%; } /*margin-right: 50% */
+._offset-rm-5-of-12 { margin-right: 0%; } /*margin-right: 41.667% */
+._offset-rm-4 { margin-right: 0%; } /*margin-right: 33.333% */
+._offset-rm-3 { margin-right: 50%; } /*margin-right: 25% */
+._offset-rm-2 { margin-right: 50%; } /*margin-right: 16.667% */
+._offset-rm-1 { margin-right: 50%; } /*margin-right: 8.333% */
+._offset-rm-0  { margin-right: 0%; }
+
+
+/* small */
+._offset-rs-12  { margin-right: 100%; }
+._offset-rs-11 { margin-right: 91.667%; }
+._offset-rs-10 { margin-right: 83.333%; }
+._offset-rs-9 { margin-right: 75%; }
+._offset-rs-8 { margin-right: 66.667%; }
+._offset-rs-7 { margin-right: 58.333%; }
+._offset-rs-6 { margin-right: 50%; }
+._offset-rs-5 { margin-right: 41.667%; }
+._offset-rs-4 { margin-right: 33.333%; }
+._offset-rs-3 { margin-right: 25%; }
+._offset-rs-2 { margin-right: 16.667%; }
+._offset-rs-1 { margin-right: 8.333%; }
+._offset-rs-0  { margin-right: 0%; }
+
+
+
+/*============================================================================================================================
+Col netjes naast elkaar zetten...
+==============================================================================================================================*/
+@media only screen and (max-width: 767px){
+	
+	/* 2 col zelfde width, even hoog */
+	._cols-m-4n > ._col-m-3:nth-child(2n+1),
+	._cols-m-6n > ._col-m-2:nth-child(2n+1), 
+	._cols-m-12n > ._col-m-1:nth-child(2n+1) { clear: both; } 
+	
+	._cols-s-2n > ._col-m-12:nth-child(n), ._cols-s-2n > ._col-m-11:nth-child(n), ._cols-s-2n > ._col-m-10:nth-child(n), ._cols-s-2n > ._col-m-9:nth-child(n), ._cols-s-2n > ._col-m-8:nth-child(n), ._cols-s-2n > ._col-m-7:nth-child(n), ._cols-s-2n > ._col-m-6:nth-child(n), ._cols-s-2n > ._col-m-5:nth-child(n), ._cols-s-2n > ._col-m-4:nth-child(n), ._cols-s-2n > ._col-m-3:nth-child(n), ._cols-s-2n > ._col-m-2:nth-child(n), ._cols-s-2n > ._col-m-1:nth-child(n), ._cols-s-2n > ._col-m-0:nth-child(n),
+	._cols-s-3n > ._col-m-12:nth-child(n), ._cols-s-3n > ._col-m-11:nth-child(n), ._cols-s-3n > ._col-m-10:nth-child(n), ._cols-s-3n > ._col-m-9:nth-child(n), ._cols-s-3n > ._col-m-8:nth-child(n), ._cols-s-3n > ._col-m-7:nth-child(n), ._cols-s-3n > ._col-m-6:nth-child(n), ._cols-s-3n > ._col-m-5:nth-child(n), ._cols-s-3n > ._col-m-4:nth-child(n), ._cols-s-3n > ._col-m-3:nth-child(n), ._cols-s-3n > ._col-m-2:nth-child(n), ._cols-s-3n > ._col-m-1:nth-child(n), ._cols-s-3n > ._col-m-0:nth-child(n),
+	._cols-s-4n > ._col-m-12:nth-child(n), ._cols-s-4n > ._col-m-11:nth-child(n), ._cols-s-4n > ._col-m-10:nth-child(n), ._cols-s-4n > ._col-m-9:nth-child(n), ._cols-s-4n > ._col-m-8:nth-child(n), ._cols-s-4n > ._col-m-7:nth-child(n), ._cols-s-4n > ._col-m-6:nth-child(n), ._cols-s-4n > ._col-m-5:nth-child(n), ._cols-s-4n > ._col-m-4:nth-child(n), ._cols-s-4n > ._col-m-3:nth-child(n), ._cols-s-4n > ._col-m-2:nth-child(n), ._cols-s-4n > ._col-m-1:nth-child(n), ._cols-s-4n > ._col-m-0:nth-child(n),
+	._cols-s-6n > ._col-m-12:nth-child(n), ._cols-s-6n > ._col-m-11:nth-child(n), ._cols-s-6n > ._col-m-10:nth-child(n), ._cols-s-6n > ._col-m-9:nth-child(n), ._cols-s-6n > ._col-m-8:nth-child(n), ._cols-s-6n > ._col-m-7:nth-child(n), ._cols-s-6n > ._col-m-6:nth-child(n), ._cols-s-6n > ._col-m-5:nth-child(n), ._cols-s-6n > ._col-m-4:nth-child(n), ._cols-s-6n > ._col-m-3:nth-child(n), ._cols-s-6n > ._col-m-2:nth-child(n), ._cols-s-6n > ._col-m-1:nth-child(n), ._cols-s-6n > ._col-m-0:nth-child(n),
+	._cols-s-12n > ._col-m-12:nth-child(n), ._cols-s-12n > ._col-m-11:nth-child(n), ._cols-s-12n > ._col-m-10:nth-child(n), ._cols-s-12n > ._col-m-9:nth-child(n), ._cols-s-12n > ._col-m-8:nth-child(n), ._cols-s-12n > ._col-m-7:nth-child(n), ._cols-s-12n > ._col-m-6:nth-child(n), ._cols-s-12n > ._col-m-5:nth-child(n), ._cols-s-12n > ._col-m-4:nth-child(n), ._cols-s-12n > ._col-m-3:nth-child(n), ._cols-s-12n > ._col-m-2:nth-child(n), ._cols-s-12n > ._col-m-1:nth-child(n), ._cols-s-12n > ._col-m-0:nth-child(n) {
+		clear: none;
+	}
+	
+	
+	/* 2 col zelfde width, even hoog */
+	._cols-s-2n > ._col-s-6:nth-child(2n+1) { clear: both; }
+	
+	/* 3 col zelfde width, even hoog*/
+	._cols-s-3n > ._col-s-4:nth-child(3n+1) { clear: both; }
+	
+	/* 4 col zelfde width, even hoog */
+	._cols-s-4n > ._col-s-3:nth-child(4n+1){ clear: both; }
+	
+	/* 6 col zelfde width, even hoog */
+	._cols-s-6n > ._col-s-2:nth-child(6n+1) { clear: both; }
+	
+	/* 12 col zelfde width, even hoog */
+	._cols-s-12n > ._col-s-1:nth-child(12n+1) { clear: both; }
+
+}
+
+
+/*============================================================================================================================
+Col m = medium (Tablet)...
+==============================================================================================================================*/
+@media only screen and (min-width: 768px){
+	html > body { background-color: #FFFFFF; }
+	
+	/*============================================================================================================================
+	Row en container...
+	==============================================================================================================================*/
+	._container { max-width: 991px; }
+	
+	/*============================================================================================================================
+	Col m = medium (Tablet)...
+	==============================================================================================================================*/
+	
+	/* large */
+	._col-l-12  { width: 100%; }
+	._col-l-11 { width: 100%; } /*width: 91.667% */
+	._col-l-10 { width: 100%; } /*width: 83.333% */
+	._col-l-9 { width: 100%; } /*width: 75% */
+	._col-l-8 { width: 100%; } /*width: 66.667% */
+	._col-l-7 { width: 100%; } /*width: 58.333% */
+	._col-l-6 { width: 50%; } /*width: 50% */
+	._col-l-5 { width: 50%; } /*width: 41.667% */
+	._col-l-4 { width: 50%; } /*width: 33.333% */
+	._col-l-3 { width: 50%; } /*width: 25% */
+	._col-l-2 { width: 50%; } /*width: 16.667% */
+	._col-l-1 { width: 50%; } /*width: 8.333% */
+	
+	
+	
+	/* medium */
+	._col-m-12  { width: 100%; }
+	._col-m-11 { width: 91.667%; }
+	._col-m-10 { width: 83.333%; }
+	._col-m-9 { width: 75%; }
+	._col-m-8 { width: 66.667%; }
+	._col-m-7 { width: 58.333%; }
+	._col-m-6 { width: 50%; }
+	._col-m-5 { width: 41.667%; }
+	._col-m-4 { width: 33.333%; }
+	._col-m-3 { width: 25%; }
+	._col-m-2 { width: 16.667%; }
+	._col-m-1 { width: 8.333%; }
+
+
+	/*============================================================================================================================
+	Offset lm = left medium margin (Tablet)...
+	==============================================================================================================================*/
+	
+	/* large */
+	._offset-ll-12  { margin-left: 100%; }
+	._offset-ll-11 { margin-left: 50%; } /*margin-left: 91.667% */
+	._offset-ll-10 { margin-left: 50%; } /*margin-left: 83.333% */
+	._offset-ll-9 { margin-left: 50%; } /*margin-left: 75% */
+	._offset-ll-8 { margin-left: 50%; } /*margin-left: 66.667% */
+	._offset-ll-7 { margin-left: 50%; } /*margin-left: 58.333% */
+	._offset-ll-6 { margin-left: 50%; } /*margin-left: 50% */
+	._offset-ll-5 { margin-left: 0%; } /*margin-left: 41.667% */
+	._offset-ll-4 { margin-left: 0%; } /*margin-left: 33.333% */
+	._offset-ll-3 { margin-left: 0%; } /*margin-left: 25% */
+	._offset-ll-2 { margin-left: 0%; } /*margin-left: 16.667% */
+	._offset-ll-1 { margin-left: 0%; } /*margin-left: 8.333% */
+	
+	/* medium */
+	._offset-lm-12  { margin-left: 100%; }
+	._offset-lm-11 { margin-left: 91.667%; }
+	._offset-lm-10 { margin-left: 83.333%; }
+	._offset-lm-9 { margin-left: 75%; }
+	._offset-lm-8 { margin-left: 66.667%; }
+	._offset-lm-7 { margin-left: 58.333%; }
+	._offset-lm-6 { margin-left: 50%; }
+	._offset-lm-5 { margin-left: 41.667%; }
+	._offset-lm-4 { margin-left: 33.333%; }
+	._offset-lm-3 { margin-left: 25%; }
+	._offset-lm-2 { margin-left: 16.667%; }
+	._offset-lm-1 { margin-left: 8.333%; }
+
+
+	/*============================================================================================================================
+	Offset rm = right medium margin (Tablet)...
+	==============================================================================================================================*/
+	
+	/* large */
+	._offset-rl-12  { margin-right: 100%; }
+	._offset-rl-11 { margin-right: 50%; } /*margin-right: 91.667% */
+	._offset-rl-10 { margin-right: 50%; } /*margin-right: 83.333% */
+	._offset-rl-9 { margin-right: 50%; } /*margin-right: 75% */
+	._offset-rl-8 { margin-right: 50%; } /*margin-right: 66.667% */
+	._offset-rl-7 { margin-right: 50%; } /*margin-right: 58.333% */
+	._offset-rl-6 { margin-right: 50%; } /*margin-right: 50% */
+	._offset-rl-5 { margin-right: 0%; } /*margin-right: 41.667% */
+	._offset-rl-4 { margin-right: 0%; } /*margin-right: 33.333% */
+	._offset-rl-3 { margin-right: 0%; } /*margin-right: 25% */
+	._offset-rl-2 { margin-right: 0%; } /*margin-right: 16.667% */
+	._offset-rl-1 { margin-right: 0%; } /*margin-right: 8.333% */
+	
+	/* medium */
+	._offset-rm-12  { margin-right: 100%; }
+	._offset-rm-11 { margin-right: 91.667%; }
+	._offset-rm-10 { margin-right: 83.333%; }
+	._offset-rm-9 { margin-right: 75%; }
+	._offset-rm-8 { margin-right: 66.667%; }
+	._offset-rm-7 { margin-right: 58.333%; }
+	._offset-rm-6 { margin-right: 50%; }
+	._offset-rm-5 { margin-right: 41.667%; }
+	._offset-rm-4 { margin-right: 33.333%; }
+	._offset-rm-3 { margin-right: 25%; }
+	._offset-rm-2 { margin-right: 16.667%; }
+	._offset-rm-1 { margin-right: 8.333%; }
+
+
+}
+
+/*============================================================================================================================
+Col netjes naast elkaar zetten...
+==============================================================================================================================*/
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	
+	/* 2 col zelfde width, even hoog */
+	._cols-l-2n > ._col-l-6:nth-child(2n+1),
+	._cols-l-3n > ._col-l-4:nth-child(2n+1),
+	._cols-l-4n > ._col-l-3:nth-child(2n+1),
+	._cols-l-6n > ._col-l-2:nth-child(2n+1),
+	._cols-l-12n > ._col-l-1:nth-child(2n+1) { clear: both; }
+	
+	/* 2 col zelfde width, even hoog (uitzondering) */
+	._cols-l-2n > ._col-l-5:nth-child(2n+1) { clear: both; }
+	
+	
+	._cols-m-2n > ._col-l-12:nth-child(n), ._cols-m-2n > ._col-l-11:nth-child(n), ._cols-m-2n > ._col-l-10:nth-child(n), ._cols-m-2n > ._col-l-9:nth-child(n), ._cols-m-2n > ._col-l-8:nth-child(n), ._cols-m-2n > ._col-l-7:nth-child(n), ._cols-m-2n > ._col-l-6:nth-child(n), ._cols-m-2n > ._col-l-5:nth-child(n), ._cols-m-2n > ._col-l-4:nth-child(n), ._cols-m-2n > ._col-l-3:nth-child(n), ._cols-m-2n > ._col-l-2:nth-child(n), ._cols-m-2n > ._col-l-1:nth-child(n), ._cols-m-2n > ._col-l-0:nth-child(n),
+	._cols-m-3n > ._col-l-12:nth-child(n), ._cols-m-3n > ._col-l-11:nth-child(n), ._cols-m-3n > ._col-l-10:nth-child(n), ._cols-m-3n > ._col-l-9:nth-child(n), ._cols-m-3n > ._col-l-8:nth-child(n), ._cols-m-3n > ._col-l-7:nth-child(n), ._cols-m-3n > ._col-l-6:nth-child(n), ._cols-m-3n > ._col-l-5:nth-child(n), ._cols-m-3n > ._col-l-4:nth-child(n), ._cols-m-3n > ._col-l-3:nth-child(n), ._cols-m-3n > ._col-l-2:nth-child(n), ._cols-m-3n > ._col-l-1:nth-child(n), ._cols-m-3n > ._col-l-0:nth-child(n),
+	._cols-m-4n > ._col-l-12:nth-child(n), ._cols-m-4n > ._col-l-11:nth-child(n), ._cols-m-4n > ._col-l-10:nth-child(n), ._cols-m-4n > ._col-l-9:nth-child(n), ._cols-m-4n > ._col-l-8:nth-child(n), ._cols-m-4n > ._col-l-7:nth-child(n), ._cols-m-4n > ._col-l-6:nth-child(n), ._cols-m-4n > ._col-l-5:nth-child(n), ._cols-m-4n > ._col-l-4:nth-child(n), ._cols-m-4n > ._col-l-3:nth-child(n), ._cols-m-4n > ._col-l-2:nth-child(n), ._cols-m-4n > ._col-l-1:nth-child(n), ._cols-m-4n > ._col-l-0:nth-child(n),
+	._cols-m-6n > ._col-l-12:nth-child(n), ._cols-m-6n > ._col-l-11:nth-child(n), ._cols-m-6n > ._col-l-10:nth-child(n), ._cols-m-6n > ._col-l-9:nth-child(n), ._cols-m-6n > ._col-l-8:nth-child(n), ._cols-m-6n > ._col-l-7:nth-child(n), ._cols-m-6n > ._col-l-6:nth-child(n), ._cols-m-6n > ._col-l-5:nth-child(n), ._cols-m-6n > ._col-l-4:nth-child(n), ._cols-m-6n > ._col-l-3:nth-child(n), ._cols-m-6n > ._col-l-2:nth-child(n), ._cols-m-6n > ._col-l-1:nth-child(n), ._cols-m-6n > ._col-l-0:nth-child(n),
+	._cols-m-12n > ._col-l-12:nth-child(n), ._cols-m-12n > ._col-l-11:nth-child(n), ._cols-m-12n > ._col-l-10:nth-child(n), ._cols-m-12n > ._col-l-9:nth-child(n), ._cols-m-12n > ._col-l-8:nth-child(n), ._cols-m-12n > ._col-l-7:nth-child(n), ._cols-m-12n > ._col-l-6:nth-child(n), ._cols-m-12n > ._col-l-5:nth-child(n), ._cols-m-12n > ._col-l-4:nth-child(n), ._cols-m-12n > ._col-l-3:nth-child(n), ._cols-m-12n > ._col-l-2:nth-child(n), ._cols-m-12n > ._col-l-1:nth-child(n), ._cols-m-12n > ._col-l-0:nth-child(n) {
+		clear: none;
+	}
+	
+	/* 2 col zelfde width, even hoog */
+	._cols-m-2n > ._col-m-6:nth-child(2n+1) { clear: both; }
+	
+	/* 3 col zelfde width, even hoog */
+	._cols-m-3n > ._col-m-4:nth-child(3n+1) { clear: both; }
+	
+	/* 4 col zelfde width, even hoog */
+	._cols-m-4n > ._col-m-3:nth-child(4n+1) { clear: both; }
+	
+	/* 6 col zelfde width, even hoog */
+	._cols-m-6n > ._col-m-2:nth-child(6n+1) { clear: both; }
+	
+	/* 12 col zelfde width, even hoog */
+	._cols-m-12n > ._col-m-1:nth-child(12n+1) { clear: both; }
+	
+}
+
+
+
+
+/*============================================================================================================================
+Col l = large (Display) 12 grid...
+==============================================================================================================================*/
+@media only screen and (min-width: 992px){
+	html > body { background-color: #FFFFFF; }
+	
+	/*============================================================================================================================
+	Row en container...
+	==============================================================================================================================*/
+	._container {
+		max-width: 1400px;
+		margin: 0 auto 0;
+	}
+	
+	/*============================================================================================================================
+	Col l = large (Display)...
+	==============================================================================================================================*/
+	
+	._col-l-12 { width: 100%; }
+	._col-l-11 { width: 91.667%; }
+	._col-l-10 { width: 83.333%; }
+	._col-l-9 { width: 75%; }
+	._col-l-8 { width: 66.667%; }
+	._col-l-7 { width: 58.333%; }
+	._col-l-6 { width: 50%; }
+	._col-l-5 { width: 41.667%; }
+	._col-l-4 { width: 33.333%; }
+	._col-l-3 { width: 25%; }
+	._col-l-2 { width: 16.667%; }
+	._col-l-1 { width: 8.333%; }
+	
+	/*============================================================================================================================
+	Offset ll = left large margin (Display) 12 grid...
+	==============================================================================================================================*/
+	
+	._offset-ll-12  { margin-left: 100%; }
+	._offset-ll-11 { margin-left: 91.667%; }
+	._offset-ll-10 { margin-left: 83.333%; }
+	._offset-ll-9 { margin-left: 75%; }
+	._offset-ll-8 { margin-left: 66.667%; }
+	._offset-ll-7 { margin-left: 58.333%; }
+	._offset-ll-6 { margin-left: 50%; }
+	._offset-ll-5 { margin-left: 41.667%; }
+	._offset-ll-4 { margin-left: 33.333%; }
+	._offset-ll-3 { margin-left: 25%; }
+	._offset-ll-2 { margin-left: 16.667%; }
+	._offset-ll-1 { margin-left: 8.333%; }
+	
+	/*============================================================================================================================
+	Offset rl = right large margin (Display) 12 grid...
+	==============================================================================================================================*/
+	
+	._offset-rl-12  { margin-right: 100%; }
+	._offset-rl-11 { margin-right: 91.667%; }
+	._offset-rl-10 { margin-right: 83.333%; }
+	._offset-rl-9 { margin-right: 75%; }
+	._offset-rl-8 { margin-right: 66.667%; }
+	._offset-rl-7 { margin-right: 58.333%; }
+	._offset-rl-6 { margin-right: 50%; }
+	._offset-rl-5 { margin-right: 41.667%; }
+	._offset-rl-4 { margin-right: 33.333%; }
+	._offset-rl-3 { margin-right: 25%; }
+	._offset-rl-2 { margin-right: 16.667%; }
+	._offset-rl-1 { margin-right: 8.333%; }
+	
+	
+}
+
+
+/*============================================================================================================================
+Col netjes naast elkaar zetten...
+==============================================================================================================================*/
+@media only screen and (min-width: 992px){
+
+	/* 2 col zelfde width, even hoog */
+	._cols-l-2n > ._col-l-6:nth-child(2n+1) { clear: both; }
+	
+	/* 3 col zelfde width, even hoog*/
+	._cols-l-3n > ._col-l-4:nth-child(3n+1) { clear: both; }
+	
+	/* 4 col zelfde width, even hoog */
+	._cols-l-4n > ._col-l-3:nth-child(4n+1) { clear: both; }
+	
+	/* 6 col zelfde width, even hoog */
+	._cols-l-6n > ._col-l-2:nth-child(6n+1) { clear: both; }
+	
+	/* 12 col zelfde width, even hoog */
+	._cols-l-12n > ._col-l-1:nth-child(12n+1) { clear: both; }
+	
+}
+
+/*============================================================================================================================
+Seo haal content weg die wel in de Html staat...
+==============================================================================================================================*/
+._sr-only {
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	margin: -1px;
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+._text-center {
+	text-align: center;
+}
+
+/*============================================================================================================================
+Wysiwyg & Article...
+==============================================================================================================================*/
+._wysiwyg {
+    line-height: 28px;
+}
+
+._wysiwyg > h1,
+._wysiwyg > h2,
+._wysiwyg > h3,
+._wysiwyg > h4,
+._wysiwyg > h5,
+._h2-heading {
+	font-family: 'Gotham', arial;
+	color: #FBA100; /* Huisstijlkleur */
+	display: block;
+}
+
+	._wysiwyg._article > h1 {
+		font-size: 40px;
+		line-height: 48px;
+	}
+
+	._wysiwyg > h1,
+	._wysiwyg._article > h2 {
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 36px;
+		padding-bottom: 8px;
+		padding-top: 8px;
+		margin-bottom: 16px;
+	}
+	
+	._wysiwyg > h2,
+	._wysiwyg > ._h2-heading,
+	._wysiwyg._article > h3 {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 32px;
+		padding-bottom: 3px;
+		padding-top: 5px;
+		margin-bottom: 8px;
+	}
+
+
+._wysiwyg > h1 > *,
+._wysiwyg > h2 > *,
+._wysiwyg > h3 > *,
+._wysiwyg > h4 > *,
+._wysiwyg > h5 > * {
+	color: #FBA100; /* Huisstijlkleur */
+}
+
+	._wysiwyg > h1 > a {
+		border-bottom: 1px solid #FBA100;
+	}
+	
+._wysiwyg > p,
+._wysiwyg > ul > li,
+._wysiwyg > a {
+	padding-top: 8px;
+    padding-bottom: 4px;
+	font-weight: 300;
+	
+}
+
+._wysiwyg > p {
+	margin-bottom: 16px;
+}
+
+	._wysiwyg._article > p._intro-text {
+		font-size: 18px;
+		line-height: 32px;
+		padding-top: 11px;
+		padding-bottom: 1px;
+	}
+
+._wysiwyg > p > a,
+._wysiwyg > a {
+	color: #FBA100; /* Huisstijlkleur */
+	font-weight: 300;
+	
+	-webkit-transition: color linear 0.3s 0s, background-color linear 0.3s 0s;
+			transition: color linear 0.3s 0s, background-color linear 0.3s 0s;
+}
+
+	._wysiwyg > p > a:hover {
+		text-decoration: underline;
+	}
+
+._wysiwyg > a {
+	display: inline-block;
+	padding-left: 20px;
+	margin-bottom: 16px;
+	position: relative;
+}
+
+	._wysiwyg > ._action-link {
+		
+	}
+	
+._wysiwyg > ._btn {
+	color: #FFFFFF;
+	background: #FBA100; /* Huisstijlkleur */
+	padding-bottom: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 8px;
+	position: relative;
+	
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+}
+
+	._btn:hover {
+		background-color: #D27800;
+	}
+
+	._wysiwyg > ._btn._input-btn {
+		font-family: 'Gotham', arial; /* Het font */
+		font-size: 17px;
+		font-weight: 300; 
+		line-height: 28px; 
+	    padding-top: 8px;
+        margin-bottom: 8px;
+        
+        -webkit-transition: background-color linear 0.3s 0s;
+				transition: background-color linear 0.3s 0s;
+				
+		-webkit-appearance: none;
+	}
+	
+._wysiwyg > ul {
+	padding-bottom: 0;
+	padding-top: 0px;
+	margin-bottom: 16px;
+}
+
+._wysiwyg > ul > li { 
+	padding-left: 20px;
+	margin-bottom: 0px;
+	position: relative;
+}
+
+	._wysiwyg > ul._link-list > li {
+		padding-left: 0px;
+	}
+
+._wysiwyg > ul > li:before {
+	background: #574A46; /* Huisstijlkleur semi*/
+	content: "";
+	height: 6px;
+	width: 6px;
+	display: block;
+
+	position: absolute;
+	top: 20px;
+	left: 0;
+	
+			border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+	._wysiwyg > ul._link-list > li:before {
+		content: none;
+	}
+
+
+/* link list = ul met daarin linkjes (Door deze class kan je een apparte list-style geven aan een lijst met linkjes)*/
+._wysiwyg > ul._link-list > li > a {
+	color: #574A46; /* Huisstijlkleur semi*/
+	padding-left: 20px;
+	position: relative;
+	display: inline-block;
+}
+
+	._wysiwyg > ul._link-list > li > a:hover {
+		color: #FBA100; /* Huisstijlkleur */
+	}
+
+._wysiwyg > ul._link-list > li > a:before,
+._wysiwyg > a:not(._btn):before {
+	content: "";
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	left: 0;
+	
+	-webkit-box-shadow: inset -2px 2px 0 0 #FBA100; /* Huisstijlkleur */
+			box-shadow: inset -2px 2px 0 0 #FBA100; /* Huisstijlkleur */
+	
+	-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+	
+}
+
+	._wysiwyg > ul._link-list > li > a:before {
+		top: 10px;	
+	}
+
+	._wysiwyg > a:before {
+		top: 21px;	
+	}
+
+
+._wysiwyg > table {
+	width: 100%;
+}
+
+._wysiwyg > table > tbody > tr:nth-child(odd) {
+	background: #EDEBEA; 
+}
+
+._wysiwyg > table td,
+._wysiwyg > table th {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: rgba(87,74,70,0.3);
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: rgba(87,74,70,0.3);
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: rgba(87,74,70,0.3);
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: rgba(87,74,70,0.3);
+}
+
+/*============================================================================================================================
+Container color...
+==============================================================================================================================*/
+.orange-text {
+	color: #FBA100 !important;
+}
+
+.white-bg {
+	background-color: #ffffff;
+}
+
+.grey-bg {
+	background-color: #f0e6dc;
+}
+
+.orange-bg {
+	background-color: #FBA100;
+}
+
+.row-space {
+	padding-top: 40px;
+	padding-bottom: 36px;
+}
+
+.inner-block {
+	padding-left: 50px;
+	padding-right: 50px;
+	
+			border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/*============================================================================================================================
+Main navigation...
+==============================================================================================================================*/
+.header {
+    line-height: 28px;
+}
+
+.header:before {
+	content: "";	
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+	.header > ._container {
+		overflow: visible;
+	}
+
+
+.logo {
+	text-indent: -99999px;
+	background: transparent url(../img/logo_hulpstation.svg) no-repeat;
+	display: block;
+	margin: 36px 0 36px 0;
+	float: left;
+	clear: none;
+	overflow: hidden;
+}
+
+.nav-burger {
+	height: 28px;
+	width: 28px;
+	display: block;
+	margin: 32px 0 32px 0;
+	float: right;
+	clear: right;
+	position: relative;
+	outline: none;
+}
+
+.nav-burger span {
+	height: 2px;
+	width: 28px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 0;
+	
+	-webkit-border-radius: 1px;
+			border-radius: 1px;
+	
+	-webkit-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+	
+	-webkit-transition: -webkit-transform ease 0.15s, top ease 0.15s, opacity ease 0.15s;
+	transition: transform ease 0.15s, top ease 0.15s, opacity ease 0.15s;
+}
+
+	.nav-burger span:first-child{ top: 4px; }
+	.nav-burger span:nth-child(2){ 
+		top: 13px;
+		
+		-webkit-transition-delay: 0.16s;
+		transition-delay: 0.16s; 
+	}
+	.nav-burger span:last-child{ top: 22px; }
+	
+		/*Burger to close*/
+		.nav-burger:hover span:nth-child(2) {
+			opacity: 0;
+		}
+		
+		.nav-burger:hover span:first-child,
+		.nav-burger:hover span:last-child {
+			top: 13px;
+			
+			-webkit-transition-delay: 0.16s;
+			transition-delay: 0.16s;
+		}
+		
+			.nav-burger:hover span:first-child {
+				-webkit-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+			}
+			
+			.nav-burger:hover span:last-child {
+				-webkit-transform: rotate(45deg);
+					-ms-transform: rotate(45deg);
+						transform: rotate(45deg);
+			}
+
+
+.main-navigation {
+	width: 100%;
+	overflow: hidden;
+	float: left;
+	clear: both;
+	
+	-webkit-transition: max-height linear 0.8s 0s;
+			transition: max-height linear 0.8s 0s;
+}
+
+.main-navigation-ul li {
+	font-weight: 300;
+}
+
+/* Search li */
+.nav-search-form {
+	width: 100%;
+}
+
+.nav-search-label {
+	border-bottom: 1px solid rgba(87,74,70,0.4); /* Huisstijlkleur semi */  
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
+.nav-search-field {
+	color: #574A46;
+	font-family: 'Gotham', arial; /* Het font */
+	width: 100%;
+}
+
+.nav-search-btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-indent: -999999px;
+	
+	-webkit-appearance: none;
+}
+
+/*============================================================================================================================
+Breadcrum styles...
+==============================================================================================================================*/
+.breadcrum-ul {
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+.breadcrum-ul > li:not(:nth-last-child(2)) {
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	left: -999px;
+	top: -999px;
+	overflow: hidden;
+}
+
+.breadcrum-ul > li:nth-last-child(2) > a {
+	background: #FFFFFF;
+	color: #574A46;
+	font-weight: 300;
+    line-height: 28px;
+    padding: 8px 20px 8px 40px;
+	display: inline-block;
+	position: relative;
+	
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+	
+	-webkit-transition: color linear 0.3s 0s, background-color linear 0.3s 0s;
+			transition: color linear 0.3s 0s, background-color linear 0.3s 0s;
+}
+
+	.breadcrum-ul > li:nth-last-child(2) > a:hover {
+		color: #FBA100; /* Huisstijlkleur */
+	}
+
+.breadcrum-ul > li:nth-last-child(2) > a:before {
+	content: "";
+	height: 8px;
+	width: 8px;
+	position: absolute;
+	left: 22px;
+	top: 18px;
+	
+	-webkit-box-shadow: inset 2px -2px 0 0 #574A46; /* Huisstijlkleur semi */
+			box-shadow: inset 2px -2px 0 0 #574A46; /* Huisstijlkleur semi */
+	
+	-webkit-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+	
+	-webkit-transition: -webkit-box-shadow linear 0.3s 0s;
+			transition: box-shadow linear 0.3s 0s;	
+}
+
+	.breadcrum-ul > li:nth-last-child(2) > a:hover:before {
+		-webkit-box-shadow: inset 2px -2px 0 0 #FBA100; /* Huisstijlkleur */
+			box-shadow: inset 2px -2px 0 0 #FBA100; /* Huisstijlkleur */
+	}
+
+/*============================================================================================================================
+Home...
+==============================================================================================================================*/
+.home-cover {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.home-cover-block {
+	
+	padding-top: 32px;
+	padding-bottom: 28px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+}
+
+
+/*============================================================================================================================
+Custumor opinion...
+==============================================================================================================================*/
+.custumor-opinion {
+}
+
+
+.custumor-opinion > p {
+	font-size: 18px;
+	font-weight: 300;
+    line-height: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 28px;
+}
+
+.custumor-opinion > p:first-child:before {
+	content: "\201C";
+	padding-left: 50px;
+}
+
+.custumor-opinion > p:nth-last-child(2):after {
+	content: "\201D";
+}
+
+.custumor-profile-img {
+	height: 60px;
+	width: 60px;
+	overflow: hidden;
+	margin-bottom: 12px;
+	margin-right: 20px;
+	float: left;
+	
+	-webkit-border-radius: 50%;
+			border-radius: 50%;
+}
+
+.custumor-profile-img > img {
+	height: auto;
+	width: 100%;
+}
+
+.custumor-profile-name {
+	font-weight: 300;
+	padding-top: 16px;
+	margin-bottom: 16px;
+	float: left;
+}
+
+.custumor-profile-wrap {
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 12px;
+}
+
+/*============================================================================================================================
+Form styles...
+==============================================================================================================================*/
+.input-field {
+	color: #574A46; /* Huisstijlkleur semi */ 
+    font-family: 'Gotham', arial; /* Het font */
+    font-size: 17px;
+    font-weight: 300; 
+    line-height: 28px; 
+	border: 1px solid rgba(87,74,70,0.4);
+	/*outline: #FBA100;  Huisstijlkleur */
+	width: 100%;
+	padding: 7px 0 7px 20px;
+	
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+			
+	-webkit-box-shadow: inset 0 2px 0 0 rgba(87,74,70,0.1); /* Huisstijlkleur semi */ 
+			box-shadow: inset 0 2px 10 0 rgba(87,74,70,0.1); /* Huisstijlkleur semi */ 
+}
+
+.form-label {
+	font-weight: 300;
+	padding-top: 8px;
+	padding-bottom: 0px;
+	display: block;
+}
+
+.form-row {
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 12px;
+	position: relative;
+}
+
+
+.js-error-field {
+	border-color: red;
+}
+
+/*============================================================================================================================
+Cover styles...
+==============================================================================================================================*/
+.cover-title-row {
+	
+}
+
+.cover-title-tab-row {
+	
+}
+
+
+/*============================================================================================================================
+Subnav tab styles...
+==============================================================================================================================*/
+.subnav-tab-ul-wrap {
+	line-height: 0;
+}
+
+.subnav-tab-ul {
+	display: inline-block;
+	margin-top: 32px;
+}
+
+.subnav-tab-ul > li {
+	float: left;
+}
+
+	.subnav-tab-ul > li.active {
+		background: #FFFFFF;
+		
+		-webkit-border-radius: 3px 3px 0 0;
+				border-radius: 3px 3px 0 0;
+	}
+
+.subnav-tab-ul > li > a {
+	color: #574A46;
+	font-weight: 300;
+	line-height: 28px;
+	padding: 13px 25px 11px;
+	margin: 0;
+	display: block;
+	
+	-webkit-transition: color linear 0.3s 0s, background-color linear 0.3s 0s;
+			transition: color linear 0.3s 0s, background-color linear 0.3s 0s;
+}
+
+
+	.subnav-tab-ul > li > a:hover {
+		color: #FBA100; 
+	}
+
+/*Niet op stijlen*/
+.js-subnav-tab {
+	
+}
+
+/*============================================================================================================================
+Tarieven styles...
+==============================================================================================================================*/
+.pricing-price {
+	padding-left: 15px;
+	padding-top: 8px;
+	position: relative;
+}
+
+.pricing-number {
+    font-size: 55px;
+    font-weight: 200;
+    line-height: 52px;
+}
+
+.pricing-euro-character {
+	font-weight: 300;
+	width: 20px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 13px;
+}
+
+.pricing-month {
+	line-height: 20px;
+    font-size: 15px;
+    text-align: right;
+    display: inline-block;
+}
+
+.pricing-favorite {
+	background-color: #f0e6dc;
+	color: ##574A46 ; /* Huisstijlkleur semi #574A46 */
+	padding: 4px 60px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	display: inline-block;
+	border-radius: 3px;
+}
+
+.pricing-extra {
+color: ##574A46;
+font-weight: 400;
+}
+
+
+/*============================================================================================================================
+Accosiates styles...
+==============================================================================================================================*/
+.associates-block {
+	height: 280px;
+	
+}
+
+	a.associates-link {
+		text-indent: -999999px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	a.associates-link:before {
+		content: none;
+		display: none;
+	}
+
+
+.associates-block > .associates-figure {
+	height: 160px;
+	width: 160px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.associates-figure > img {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	-webkit-transition: opacity linear 0.3s 0s;
+			transition: opacity linear 0.3s 0s;
+}
+
+	.associates-figure > img:first-child{
+		opacity: 1;
+	}
+	
+		.associates-block:hover .associates-figure > img:first-child{
+			opacity: 0;
+		}
+
+	.associates-figure > img:last-child{
+		opacity: 0;
+	}
+		
+		.associates-block:hover .associates-figure > img:last-child{
+			opacity: 1;
+		}
+
+/*============================================================================================================================
+Fader styles...
+==============================================================================================================================*/
+.js-fader-slide {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	
+	-webkit-transition: opacity linear 0.8s 0s, max-height linear 0s 1s;
+			transition: opacity linear 0.8s 0s, max-height linear 0s 1s;
+}
+
+	.js-fader-slide.js-active {
+		opacity: 1;
+		max-height: 500px;
+		overflow: hidden;
+		
+		-webkit-transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+				transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+	} 
+	
+
+.js-fader-indicators {
+    line-height: 12px;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 24px;
+}
+
+.js-fader-indicators > li {
+	cursor: pointer;
+	border: 1px solid #574A46;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+			border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+	.js-fader-indicators > li.js-active:before {
+		content: "";
+		background-color: #574A46;
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		top: 3px;
+		left: 3px; 
+		
+			border-radius: 50%;
+		-webkit-border-radius: 50%;
+	}
+
+
+/*Mobile port and smaller */
+@media only screen and (max-width: 479px){
+/*============================================================================================================================
+Main navigation...
+==============================================================================================================================*/
+	.logo {
+		height: 20px;
+		width: 34px;
+	}
+	
+	
+	/*Seach nav */
+	.nav-search-label {
+		margin-top: 24px;
+	}
+
+
+	
+}
+
+
+/*Larger than */
+@media only screen and (min-width: 480px){
+/*============================================================================================================================
+Main navigation...
+==============================================================================================================================*/
+	.logo {
+		height: 20px;
+		width: 262px;
+	}
+	
+	/*Seach nav */
+	.nav-search-label {
+		margin-top: 24px;
+	}
+	
+	
+}
+
+
+
+
+/*Mobile land and smaller */
+@media only screen and (max-width: 767px){
+/*============================================================================================================================
+Main navigation...
+==============================================================================================================================*/
+	
+	/*Seach nav */
+	.nav-search-label {
+		margin-top: 24px;
+	}
+
+/*============================================================================================================================
+Tarieven styles...
+==============================================================================================================================*/
+	.pricing-price {
+		padding-bottom: 8px;
+		float: left;
+	}
+	
+	.pricing-month {
+		padding-left: 14px;
+		padding-top: 8px;
+	    float: left;
+	}
+	
+/*============================================================================================================================
+Fader styles...
+==============================================================================================================================*/
+	.js-fade-slides-s-2 .js-active + .js-fader-slide,
+	.js-fade-slides-s-3 .js-active + .js-fader-slide,
+	.js-fade-slides-s-3 .js-active + .js-fader-slide + .js-fader-slide  {
+		opacity: 1;
+		max-height: 500px;
+		overflow: hidden;
+		
+		-webkit-transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+				transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+	}
+	
+	.js-fade-slides-s-2 .js-fader-indicators > li:nth-child(2n),
+	.js-fade-slides-s-3 .js-fader-indicators > li:nth-child(3n - 1),
+	.js-fade-slides-s-3 .js-fader-indicators > li:nth-child(3n) {
+		display: none;
+	}
+	
+}
+
+@media only screen and (min-width: 768px){
+/*============================================================================================================================
+Tarieven styles...
+==============================================================================================================================*/
+	.pricing-price {
+		float: right;
+	}
+	
+	.pricing-month {
+	    padding-top: 4px;
+	    float: right;
+	}
+
+
+}
+
+/*Table and smaller */
+@media only screen and (max-width: 991px){
+
+/*============================================================================================================================
+Main navigation...
+==============================================================================================================================*/	
+	.header:before {
+		background-color: #FFFFFF;
+		top: 92px;
+		bottom: 0px;
+	}
+	
+	/* Phone */
+	.header-phone-info {
+		display: none;
+	}
+	
+	/* Nav */
+	.main-navigation {
+		max-height: 0;
+	}
+	
+		/*.nav-burger:hover + .main-navigation*/
+		.nav-burger.open + .main-navigation {
+			max-height: 500px; /* max-height voor css animatie zonder javascript (maak groter als nodig is)*/
+		}
+	
+	.main-navigation-ul {
+		margin-top: 25px;
+		margin-bottom: 31px;
+	}
+	
+	.main-navigation-ul > li:not(.search-li) {
+		padding-left: 0px;
+		padding-top: 10px;
+	    padding-bottom: 2px;
+		margin-bottom: 0px;
+		position: relative;
+	}
+	
+	.main-navigation-ul > li:not(.search-li) > a {
+		color: #574A46;
+		padding-left: 20px;
+		position: relative;
+		display: inline-block;
+	}
+	
+	.main-navigation-ul > li > a:before {
+		content: "";
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		left: 0;
+		top: 12px;	
+		
+		-webkit-box-shadow: inset -2px 2px 0 0 #FBA100; /* Huisstijlkleur */
+				box-shadow: inset -2px 2px 0 0 #FBA100; /* Huisstijlkleur */
+		
+		-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+				transform: rotate(45deg);
+		
+	}
+	
+	.main-navigation-ul > li > .main-navigation-dropdown {
+		display: none;
+	}
+	
+	/*Search nav */
+	.search-li > a {
+		display: none;
+	}
+	
+	.nav-search-label {
+		padding: 0 30px 2px 0;
+		margin-bottom: 16px;
+	}
+	
+	.nav-search-field {
+		font-size: 17px;
+	    font-weight: 400; 
+	    line-height: 32px;
+	}
+	
+	.nav-search-btn {
+		background: no-repeat url(../img/sprite_hulpstation.svg) -10px -162px;
+		height: 30px;
+		width: 30px;
+	}
+	
+	
+		.nav-search-btn:hover {
+			background-position: -10px -242px;
+		}
+	
+}
+
+
+/*Table till mobile */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	
+/*============================================================================================================================
+Main navigation...
+==============================================================================================================================*/
+	.main-navigation-ul { 
+		width: 100%;
+		overflow: hidden;
+		height: auto;
+		position: relative;
+	}
+	
+	.main-navigation-ul > li:not(.search-li) {
+		width: 40%;
+	}
+	
+	.search-li {
+		width: 60%;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.nav-search-label {
+	    margin-top: 88px;
+	}
+	
+/*============================================================================================================================
+Fader styles...
+==============================================================================================================================*/
+	.js-fade-slides-m-2 .js-active + .js-fader-slide,
+	.js-fade-slides-m-3 .js-active + .js-fader-slide,
+	.js-fade-slides-m-3 .js-active + .js-fader-slide + .js-fader-slide  {
+		opacity: 1;
+		max-height: 500px;
+		overflow: hidden;
+		
+		-webkit-transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+				transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+	}
+	
+	.js-fade-slides-m-2 .js-fader-indicators > li:nth-child(2n),
+	.js-fade-slides-m-3 .js-fader-indicators > li:nth-child(3n - 1),
+	.js-fade-slides-m-3 .js-fader-indicators > li:nth-child(3n) {
+		display: none;
+	}
+	
+
+	
+}
+
+/*Desktop */
+@media only screen and (min-width: 992px){
+		
+	body {
+		overflow-x: hidden;
+	}
+	
+/*============================================================================================================================
+Main navigation...
+==============================================================================================================================*/
+	.header {
+		overflow: visible;
+	}
+
+	
+	.header:before {
+		background-color: rgba(255,255,255,0.2);
+		height: 1px;
+		top: 91px;
+	}
+	
+	/* Phone */
+	.header-phone-info {
+		color: #FFFFFF;
+	    padding: 3px 0 0px 0;
+	    margin: 32px 0 0 0;
+		float: right;
+	}
+	
+	.header-phone-number {
+		
+	}
+	
+	.header-phone-number:before {
+		content: "";
+		background: no-repeat url(../img/sprite_hulpstation.svg) -20px -20px;
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	
+	.header-phone-price {
+		font-size: 12px;
+		padding-left: 10px;
+	}
+	
+	/* Nav */
+	
+	.main-navigation-ul {
+		width: 100%;
+	}
+	
+	.main-navigation-ul > li {
+		padding: 0 0 32px 0;
+		margin: 28px 40px 0 0;
+		float: left;
+	}
+	
+	.main-navigation-ul > li > a {
+		color: #FFFFFF;
+		padding: 0;
+		margin: 0;
+	}
+	
+	.nav-burger {
+		display: none;
+	}
+	
+	.main-navigation {
+		overflow: visible;
+	}
+	
+	.main-navigation-ul > li > .main-navigation-dropdown,
+	.main-navigation-ul > li > .nav-search-dropdown {
+		background: #FFFFFF;
+		max-height: 0;
+		overflow: hidden;
+		padding: 0 9025px 0;
+		position: absolute;
+		left: -9000px;
+		right: -9000px;
+		top: 180px;
+		
+		-webkit-box-shadow: 0 2px 0 0 rgba(87,74,70,0.1);
+				box-shadow: 0 2px 10 0 rgba(87,74,70,0.1);
+		
+		-webkit-transition: max-height linear 0.5s 0s;
+				transition: max-height linear 0.5s 0s;
+	}
+	
+		.main-navigation-ul > li > .main-navigation-dropdown {
+			z-index: 50;
+		}
+	
+		.main-navigation-ul > li:hover > .main-navigation-dropdown:not(.nav-search-dropdown) {
+			max-height: 500px;
+		}
+		
+		.main-navigation-ul > li > .nav-search-dropdown {
+			z-index: 40;
+		}
+	
+	.main-navigation-dropdown > div:not(:nth-child(4)) {
+		margin-top: 40px;
+	}
+	
+	.main-navigation-dropdown .more-links {
+		color: #574A46; /* Huisstijlkleur semi */ 
+		text-align: center;
+		border-top: 1px solid rgba(87,74,70,0.4); /* Huisstijlkleur semi */ 
+		padding-top: 34px;
+		padding-bottom: 34px;
+		margin-top: 23px;
+	}
+	
+		.main-navigation-dropdown .more-links:hover {
+			color: #FBA100; /* Huisstijlkleur */	
+		}
+	
+	
+	/* Search li*/
+	.main-navigation-ul > li > a.open + .nav-search-dropdown {
+		max-height: 200px;
+	}
+	
+	
+	.main-navigation-ul > .search-li {
+		float: right;
+		margin-right: 0;
+	}
+	
+	.main-navigation-ul > .search-li > a:after {
+		content: "";
+		background: no-repeat url(../img/sprite_hulpstation.svg) -11px -90px;
+		height: 12px;
+		width: 12px;
+		margin: 0 0 0 10px;
+		display: inline-block;
+	}
+	
+	.nav-search-label {
+		padding: 0 40px 3px 0;
+		margin-top: 32px;
+		margin-bottom: 44px;
+	}
+	
+	.nav-search-field {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 36px;
+	}
+	
+	.nav-search-btn {
+		background: no-repeat url(../img/sprite_hulpstation.svg) -10px -326px;
+		height: 40px;
+		width: 40px;
+	}
+	
+		.nav-search-btn:hover {
+			background-position: -10px -406px;
+		}
+	
+
+
+/*============================================================================================================================
+Fader styles...
+==============================================================================================================================*/
+	.js-fade-slides-l-2 .js-active + .js-fader-slide,
+	.js-fade-slides-l-3 .js-active + .js-fader-slide,
+	.js-fade-slides-l-3 .js-active + .js-fader-slide + .js-fader-slide  {
+		opacity: 1;
+		max-height: 500px;
+		overflow: hidden;
+		
+		-webkit-transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+				transition: opacity linear 0.8s 1s, max-height linear 0s 1s;
+	}
+	
+	.js-fade-slides-l-2 .js-fader-indicators > li:nth-child(2n),
+	.js-fade-slides-l-3 .js-fader-indicators > li:nth-child(3n - 1),
+	.js-fade-slides-l-3 .js-fader-indicators > li:nth-child(3n) {
+		display: none;
+	}
+
+	
+	
+}
+/*Desktop end */

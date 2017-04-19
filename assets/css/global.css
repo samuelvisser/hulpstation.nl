@@ -1,0 +1,2935 @@
+/*==============================================================
+Project specific resets...
+================================================================*/
+
+html, body { width:100%; min-height:100%; height:auto !important; height:100%; margin:0; padding:0; text-align:left; }
+body { }
+ul, ol, dl { list-style:none; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,strong,em,pre,form,body,html,p,blockquote,cite,code,fieldset,legend,input,embed,object,param,dl,dd,dt,kbd,samp,var,tt,table,th,th,figure,figcaption { margin:0; padding:0; font-style:normal; font-weight:normal; }
+a img, :link img, :visited img { border:none; }
+embed,object,param { display:block; }
+img { display:block; }
+
+/* Typography reset... */
+a, a:hover, a:visited, a:active, a:link, a:focus, object:focus { outline:none; text-decoration:none;
+}
+/*
+a, a:hover, a:visited, a:active, a:link, a:focus, object:focus {
+	font-weight: 900;
+} */
+
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:19px; margin:0px;}
+
+/* Form reset... */
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus, select:focus { outline:none; }
+input[type=submit], button { cursor:pointer;}
+input, fieldset, select, textarea, button { background-color:transparent; border:none; overflow:visible; }
+radio { overflow:visible; }
+
+/* Disabling safari resize handles... */
+textarea { resize:none; }
+
+
+/*==============================================================
+Window general styling...
+================================================================*/
+
+*{
+    -webkit-user-select: none;
+            user-select: none;
+}
+
+ul,ol,li,h1,h2,h3,h4,h5,h6,strong,em,pre,p,b,blockquote,cite,code,fieldset,legend,input,textarea,param,dl,dd,dt,kbd,samp,var,tt,td {
+    -webkit-user-select: text;
+            user-select: text;
+}	
+
+
+/*==============================================================
+_ Global layout and styling
+_ Text styling Wysiwyg
+_ Table
+_ Link list
+_ Checklist
+_ Header styling
+_ Dropdown
+_ Form
+_ Filterblock
+_ Action block 
+_ Faq...
+_ Search
+_ Search result
+_ Img 
+_ Footer 
+_ Col 
+================================================================*/
+
+/*==============================================================
+_ Global layout and styling
+================================================================*/
+#Grid {
+	background: url(/assets/img/grid.png) repeat;
+	height: 100%;
+	width: 100%;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+body { 
+    background: #FFFFFF  center -78px no-repeat; 
+    color: #6A6666; 
+    font-family: "Gotham-N3", Gotham; 
+    font-size:19px;
+    font-weight: 300; 
+    line-height:30px; 
+    text-align: left; 
+    position: relative;
+    
+}
+
+/*==============================================================
+Test in0
+================================================================*/    
+.test {
+	background:  red;
+	width: 100px;
+	height: 100px;
+
+}
+
+    
+/*==============================================================
+end Test in0
+================================================================*/   
+
+
+
+
+.Wrap {
+    height: auto;
+    width: 100%; 
+    /* min-width: 1260px; */
+    overflow: hidden;
+    position: relative; 
+    padding: 0;
+}
+
+	.Wrap.BodyWrap {
+		padding: 240px 0 0 0; /* 240 + 42 voor text */	
+	}
+	
+		.remove-body-space .Wrap.BodyWrap {
+			padding: 40px 0 0 0;
+		}
+	
+	.Wrap.BodyWrapImg {
+		padding: 200px 0 0 0; /* 240 + 42 voor text */	
+	}
+		
+		.remove-body-space .Wrap.BodyWrapImg {
+			padding: 0 0 0 0;
+		}
+
+
+	
+	.red {
+		background-color: red;
+		width: 300px;
+		height: 100px;
+	}
+
+.Row {
+	max-width: 1130px;
+	margin: 0 auto;
+	padding: 0 50px;
+	overflow: hidden;
+	position: relative;
+	float: none;
+	clear: both;
+	display: block;
+}
+
+.BorderSpace {
+	margin: 0 50px;
+
+}
+
+/*==============================================================
+_ Text styling Wysiwyg
+================================================================*/
+
+h2:not(._sr-only),:not(._new-style-guide) h3,:not(._new-style-guide)  h4,:not(._new-style-guide)  h5,:not(._new-style-guide)  h6, .Heading {
+	color: #FBA100 /* #EBA019  */;
+	/*font-family: "Gotham-N7", Gotham;*/
+	font-weight: 700;
+	height: auto;
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	float: left;
+	clear: both;
+	display: block;
+}
+
+
+.Wysiwyg h2 {
+		font-size: 25px; /*was 44*//
+		line-height: 55px;
+		padding: 40px 0 10px 0; /* was 40 0 40 0*/
+}
+
+	.Wysiwyg h2.DoubleHeader {
+		padding: 40px 0 35px 0;
+	}
+
+.Wysiwyg h3 {
+		font-size: 25px;  /*was 30*/
+		line-height: 45px;
+		padding: 40px 0 10px 0; /* 40 0 40 0*/
+}
+
+
+:not(._new-style-guide)  a {
+	/*color: #6A6666;*/
+	
+	-webkit-transition: color 0.4s ease;
+	transition: color 0.4s ease;
+}
+
+.SearchResult {
+	color: #6A6666;
+}
+
+.DropLi > a {
+	color: #6A6666;
+}
+
+	a:hover {
+		color: #427496 /* #EBA019  */;	
+	}
+	
+.Wysiwyg p {
+	font-family: "Gotham-N3", Gotham;
+	font-weight: 200;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 3px 0 27px 0;
+	display: block;
+	float: none;
+	clear: both;
+}
+
+.Wysiwyg p a {
+	color: #427496;
+}
+
+.Wysiwyg ul {
+	height: auto;
+	overflow: hidden;
+	padding: 3px 0 27px 25px;
+	display: block;
+	float: none;
+	clear: both;
+}
+
+.Wysiwyg ul a {
+	color: #427496;
+}
+
+.Wysiwyg .OneOfThree ul {
+	padding: 3px 0 27px 0;
+}
+
+.Wysiwyg li{
+	background: url(/assets/img/li_item.svg) no-repeat -10px 5px transparent;
+	font-family: "Gotham-N3", Gotham;
+	font-weight: 200;
+	padding: 0 0 0 30px;
+	margin: 0 0 5px 0;
+	display: block;
+	float: none;
+	clear: both;
+}
+
+	.ie8 .Wysiwyg li{
+		background-image: url(/assets/img/li_item.png);
+	}
+
+.Wysiwyg .Quote{
+	background: #EBEAE9;
+	color: #427496 /* #EBA019  */;	
+	font-size: 19px;
+	line-height: 35px;
+	padding: 45px 50px 15px 50px;
+	margin: 15px 0 45px 0;
+	display: block;
+	float: none;
+	clear: both;
+	overflow: hidden;
+}
+
+
+.Wysiwyg .Quote p{
+	
+}
+
+.Wysiwyg .Quote a{
+	color: #427496;
+	text-decoration: underline;
+}
+
+	
+.Wysiwyg .Quote Li{
+	background: url(/assets/img/FBA100/quote_li_item.svg) no-repeat -10px 5px transparent;
+}
+
+.Wysiwyg .Quote span{
+	font-family: "Gotham-N5", Gotham;
+	font-weight: 500;
+}
+
+.Wysiwyg .ReadMore {
+	font-family: "Gotham-N3", Gotham;
+	font-weight: 200;
+	height: auto;
+	overflow: hidden;
+	margin: 0 0 25px 0;
+	display: inline-block;
+	float: left;
+	clear: right;
+	background: url(/assets/img/427496/li_item_a.svg) no-repeat -10px 2px transparent;
+	padding: 3px 0 2px 30px;
+}
+
+	.ie8 .Wysiwyg .ReadMore {
+		background-image: url(/assets/img/li_item_a.png);
+	}
+
+.ActionButton,  .LinkList .ActionButton{
+	background: #FBA100 /* #003650  */;
+	color: #FFFFFF;
+	font-family: "Gotham-N3", Gotham;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 30px;
+	padding: 9px 25px 11px;
+	display: block;
+	float: right;
+	clear: both;
+	margin: 15px 0 45px 0;
+	
+	-webkit-appearance: none;
+	
+	border-radius: 0;
+	-webkit-border-radius: 0;
+}
+
+/* Uitgezet
+.ActionButton1{
+background: #003650;
+color: #FFFFFF;
+font-family: "Gotham-N3", Gotham;
+font-size: 17px;
+font-weight: 300;
+line-height: 30px;
+padding: 9px 25px 11px;
+display: block;
+float: left;
+clear: both;
+margin: 15px 0 45px 0;
+
+-webkit-appearance: none;
+
+border-radius: 0;
+-webkit-border-radius: 0;
+
+}
+*/
+
+.ActionButton1{
+    display: inline-block;
+	color: #FFFFFF !important;
+	font-family: 'Gotham', arial;
+    font-size: 17px;
+    line-height: 28px;
+	background: #FBA100; /* Huisstijlkleur */
+	padding-bottom: 8px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	margin-bottom: 20px;
+	margin-top: 8px;
+	position: relative;
+	
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+}
+
+
+.ActionButton:hover {
+	color: #FFFFFF;
+}
+
+.SideBar h3, .OneOfThree h3, .OneOfTwo h3  {
+	font-size: 22px;
+	line-height: 35px;
+	padding: 44px 0 36px 0;
+}
+
+
+#tarieven {
+	color: #FBA100 ;
+	font-weight: 900;
+}
+
+
+
+/*==============================================================
+_ Table
+================================================================*/
+
+.Wysiwyg table {
+	margin: 0 0 47px 0;
+	border-top: 13px solid #FFFFFF;
+	border-collapse: collapse;
+	width: 100%;
+	position: relative;
+}
+
+.Wysiwyg thead {
+	background: url(/assets/img/table_border.png) repeat-x 0 0 transparent;
+	border-bottom: 3px solid #FBA100 /* #EBA019  */; 
+}
+
+.Wysiwyg td, .Wysiwyg th {
+	border-left: 1px solid #8D8B8B /* #C8C5C5  */;
+	border-right: 1px solid #8D8B8B /* #C8C5C5  */;
+	border-bottom: 1px solid #8D8B8B /* #C8C5C5  */;
+	font-size: 19px;
+	line-height: 35px;
+	vertical-align: top;
+}
+
+.Wysiwyg td {
+	font-family: "Gotham-N3", Gotham;
+	font-weight: 200;
+}
+
+.Wysiwyg th {
+	color: #FBA100 /* #EBA019  */;
+	font-family: "Gotham-N5", Gotham;
+	font-weight: 500;
+}
+
+.Wysiwyg table td span {
+	padding: 26px 25px 26px 25px;
+	display: block;
+}
+
+.Wysiwyg table th span {
+	padding: 27px 25px 25px 25px;
+	display: block;
+}
+
+/*==============================================================
+_ Link list
+================================================================*/
+
+.Wysiwyg .LinkList {
+	padding: 3px 0 27px 0;
+}
+
+.LinkList li {
+	background: none;
+	padding: 0 0 0 0;
+}
+
+.LinkList a {
+	background: url(/assets/img/427496/li_item_a.svg) no-repeat -10px 2px transparent;
+	padding: 0 0 0 30px;
+	display: block;
+}
+
+	.ie8 .LinkList li {
+		background-image: url(/assets/img/ie/li_item_a.png);
+	}
+
+
+
+/*==============================================================
+_ Checklist
+================================================================*/
+
+.Wysiwyg .Checklist {
+	padding: 3px 0 27px 0;
+}
+
+.Checklist li {
+	background: url(/assets/img/li_item_check.svg) no-repeat -10px 2px transparent;
+	padding: 0 0 0 30px;
+}
+
+	.ie8 .Checklist li {
+		background-image: url(/assets/img/ie/li_item_check.png);
+	}
+
+
+
+/*==============================================================
+_ Header styling
+================================================================*/
+#Header{
+	background: #FBA100 /* #EBA019  */; /*#F99D00 */
+	height: 200px;
+	padding: 0;
+	margin: 0 0 0 0;
+	overflow-y: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+	
+	
+	#Header.Scroll{
+		position: fixed;
+		top: 200px;
+		margin: 0;
+		box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+	}
+	
+	.Wrap.HeaderBar {
+		height: 99px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+.Row.Header {
+	padding: 0px 75px;
+}
+	
+	
+#Logo {
+	background: url(/assets/img/logo_hulpstation.svg) no-repeat 0 0 transparent;
+	height: 35px;
+	width: 275px;
+	margin: 39px 0 46px 50px;
+	display: block;
+	float: left;
+	clear: none;
+	top: 0;
+	position: absolute;
+	text-indent: -99999px;
+}
+
+	.ie8 #Logo {
+		background-image: url(/assets/img/ie/logo_hulpstation.png);
+	}
+
+.NavUl {
+	height: auto;
+	display: block;
+}
+
+	.NavUl.First {
+		width: 100%;
+		margin: 0;
+		float: left;
+		clear: both;
+	}
+	
+	.NavUl.Second {
+		margin: 0 30px 0 30px;
+		float: right;
+		clear: right;	
+	}
+	
+	
+
+.NavLi {
+	float: left;
+	clear: none;
+	margin: 0 25px 0 25px;
+}
+
+	.NavLi.SearchLi {
+		float: right;
+		clear: right;
+	}
+
+.NavA {
+	color: #FFFFFF; 
+    font-family: "Gotham-N3", Gotham;
+    font-size: 19px;
+    font-weight: 300; 
+    line-height:35px; 
+    text-align: left; 
+    padding: 31px 0 34px 0;
+    margin: 0;
+    display: block; 
+    position: relative;
+}
+
+	.NavA.Visite {
+		font-family: "Gotham-N4", Gotham;
+		color: #003650;
+		font-weight: 400;
+		
+	}
+
+	.NavA.Dropdown {
+		padding-right: 33px;
+	}
+
+	.NavUl.Second .NavA {
+		font-size: 15px;
+	}
+	
+	.NavA:hover {
+		color: #FFFFFF;
+	}
+	
+	.NavA.SearchA{
+		background: url(/assets/img/icons.svg) no-repeat 83px 31px  transparent;
+		padding-right: 40px;
+	}
+	
+	.ie8 .NavA.SearchA{
+		background-image: url(/assets/img/ie/icons.png);
+	}
+	
+	.NavLi.Open .SearchA{
+		background-position: 83px -110px;
+	}
+	
+
+.NavArrow, .NavArrowBottom{
+	background: url(/assets/img/icons.svg) no-repeat transparent;
+	position: absolute;
+}
+
+	.ie8 .NavArrow, .NavArrowBottom{
+		background-image: url(/assets/img/ie/icons.png);
+	}
+	
+.NavArrow {
+	background-position:-85px -10px;
+	right: 0;
+	top: 48px;
+	height: 4px;
+	width: 8px;
+	display: block;
+}	
+	
+	.NavLi.Open .NavArrow {
+		background-position: -85px -151px;
+	}
+	
+.NavArrowBottom{ 
+	margin-left: 50%;
+	left: -5px;
+	top: 95px;
+	width: 10px;
+	height: 5px;
+	background-position: -10px -516px;	
+	display: none;
+}
+	
+	.NavLi.Open .NavArrowBottom {
+		display: block;
+	}
+	
+.MenuWrap {
+	height: auto;
+    width: 100%;
+    position: relative; 
+    padding: 0;
+}
+
+.MenuRow {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 75px;
+}
+
+.PhoneNumber {
+	background: url(/assets/img/icons.svg) no-repeat 40px -40px transparent;
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+	position: absolute;
+	color: #FFFFFF; 
+    font-family: "Gotham-N3", Gotham;
+    font-size: 19px;
+    font-weight: 300; 
+    line-height:36px; 
+    text-align: left; 
+    padding: 32px 50px 33px 90px;
+    top: 0px;
+    right: 121px;
+    
+    display: none;
+}
+
+
+.PhoneNumberFirtnav {
+	background: url(/assets/img/icons.svg) no-repeat 60px -40px transparent;
+	/*background-size: 100px;
+	background-position-y: -24px; */
+	position: absolute;
+	color: #FFFFFF; 
+    font-family: "Gotham-N3", Gotham;
+    font-size: 15px;
+    font-weight: 300;
+    line-height:36px; 
+    text-align: left; 
+    padding: 32px 210px 33px 90px;
+    top: 0px;
+    right: 121px;
+    
+}
+
+
+
+	.ie8 .PhoneNumber{
+		background-image: url(/assets/img/ie/icons.png);
+	}
+	
+	.Scroll .MenuRow {
+		padding: 0 115px;
+		max-width: none;
+	}
+	
+	.Scroll .NavUl {
+		border-left: 1px solid rgba(255, 255, 255, 0.3);
+		border-right: 1px solid rgba(255, 255, 255, 0.3);
+	}
+	
+		.Scroll .NavLi {
+			margin: 0 0 0 50px;
+		}
+		
+		.Scroll .NavA {
+			 padding: 32px 0 33px 0;	
+		}
+		
+		.Scroll .NavArrow  {
+			display: none;	
+		}
+		
+		.Scroll .NavLi.SearchLi { 
+			margin-right: -115px;
+		}
+		
+		.Scroll .NavA.SearchA{
+			background-position: 42px 33px;
+			padding-right: 115px;
+			text-indent: -99999px;
+		}
+		
+		.Scroll .PhoneNumber{
+			display: block;
+		}
+		
+		.Scroll #Logo{
+			position: fixed;
+			height: 25px;
+			top: -120px;
+			left: 0px;
+			margin: 0;
+			width: 115px;
+			height: 100px;
+			background: url(/assets/img/icons.svg) no-repeat 31px -251px transparent;
+		} 
+		
+		.ie8 .Scroll #Logo{
+			background-image: url(/assets/img/ie/icons.png);
+		}
+		
+	
+
+.MobileHeader {
+	display: none;	
+}
+
+
+/*==============================================================
+_ Dropdown
+================================================================*/
+
+	.Wrap.Dropdown {
+		background: #FFFFFF;
+		position: absolute; 
+		left: 0;
+		top: 100px;
+		padding: 0 0 120px 0;
+		display: none;
+	}
+	
+		.Dropdown.NoMoreOptions {
+			padding: 0;
+		}
+	
+	.Wrap.Dropdown.SearchWrap {
+		padding: 0;
+	}
+
+
+.DropUl {
+	display: block;
+	float: left;
+	clear: both;
+	padding: 3px 20px 27px 20px;
+}
+
+.DropLi {
+	font-family: "Gotham-N3", Gotham;
+	font-size: 19px;
+	font-weight: 200;
+	line-height: 30px;
+	margin: 0 0 5px 0;
+	float: left;
+	clear: both;
+	display: block;
+}
+
+.DropA {
+	display: block;
+}
+
+.DropHeading {
+	font-size: 19px;
+	line-height: 35px;
+	padding: 25px 20px 25px 20px;
+}
+
+	.Row.Dropdown {
+		max-width: 1070px;
+		padding: 50px 80px 40px 80px;
+	}
+
+.DropMore {
+	color: #6A6666;
+	font-family: "Gotham-N3", Gotham;
+	font-size: 19px;
+	font-weight: 200;
+	line-height: 35px;
+	border-top: 1px solid #8D8B8B /* #C8C5C5  */;
+	text-align: center;
+	margin: 0;
+	padding: 40px 0 45px 0;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+	.NavLi.Open .Wrap.Dropdown {
+		display: block;
+	}
+	
+	.NoMoreOptions .DropMore{
+		display: none;
+	}
+
+.TotalDarkness {
+	background: rgba(20, 15, 15, 0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+	.ie8 .TotalDarkness {
+		background: url(/assets/img/ie/TotalDarkness.png) repeat 0 0 transparent;
+	}
+
+
+	
+
+/*==============================================================
+_ Form 
+================================================================*/
+.FormWrap {
+	height: auto;
+	width: 100%;
+	float: left;
+	clear: left;
+	position: relative;
+}
+
+	.FormWrap.Form {
+		margin: -5px 0 0 0;
+	}
+
+.Field {
+	color: #6A6666;
+	font-family: "Gotham-N3", Gotham;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 200;
+	display: block;
+	float: left;
+	clear: both;
+}
+
+	.Field.Input {
+		margin: 0;
+		height: 30px;
+		width: 100%;
+	}
+	
+	.Field.Placeholder{
+		color: #747070;
+	}
+	
+	.Field.Textarea {
+		margin: 0;
+		height: 271px;
+		width: 100%;
+	}
+	
+	.Field.Select {
+		background: transparent;
+		width: 100%;
+		padding: 0;
+		border: 0;
+		border-radius: 0;
+		-webkit-appearance: none;
+	}
+
+.FieldLabel {
+	display: block;
+	position: relative;
+	background: #FFFFFF;
+	margin: 0 0 0 0;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #8D8B8B /* #C8C5C5  */;
+	padding: 8px 0 10px 25px;
+}
+
+	.FieldLabel.Textarea {
+		padding: 6px 0 2px 25px;
+		margin: 0 0 20px 0;
+	}
+	
+	.FieldLabel.Error {
+		border: 1px solid #B94A48;
+		padding: 9px 0 9px 25px;
+	}
+	
+	.FieldLabel.Error .Field{
+		color: #B94A48;
+	}
+	
+.FieldWrap {
+	float: none;
+	clear: both;
+	width: 100%;
+	padding: 0px 0 20px 0;
+}
+
+	.FieldWrap.Selector {
+		margin: 0;
+		padding: 0 0 20px 0;
+	}
+	
+	.FieldWrap p {
+		padding: 8px 0 27px 0;
+	}
+	
+	.FieldWrap.Radio  p {
+		padding: 5px 0 40px 0;
+	}
+
+
+.LabelRadio {
+	color: #6A6666;
+	font-family: "Gotham-N3", Gotham;
+	font-size: 19px;
+	line-height: 30px;
+	font-weight: 200;
+	position: relative;
+	display: block;
+	padding: 0px 0 0 40px;
+	margin: 0 0 10px 25px;
+	cursor: pointer;
+}
+
+.RadioButton {
+	display: none;
+}
+
+.FakeButton {
+	background: #FFFFFF;
+	border: 1px solid #B8B5B5;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	display: block;
+	
+	border-radius: 11px;
+	-webkit-border-radius: 11px;
+}
+
+.FakeFill {
+	background: #FBA100 /* #EBA019  */;
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	top: 8px;
+	left: 6px;
+	display: none;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+
+}
+
+input[type=radio]:checked + label .FakeFill  {
+	display: block;
+}
+
+.CheckboxLabel {
+	position: relative;
+	display: block;
+	padding: 0 0 0 30px;
+}
+
+	.CheckboxLabel.Error p {
+		color: #B94A48;
+	}
+
+.Checkbox {
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	top: 16px;
+	left: 0;
+}
+
+
+/*==============================================================
+_ Filterblock
+================================================================*/
+
+
+.FilterBlockWrap {
+	width: 66.66667%;
+	float: right;
+}
+
+.FilterBlock {
+	background: rgba(0, 54, 80, 0.88);
+	height: auto;
+	padding: 0 0 45px 0;
+	margin: 0;
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	clear: both;
+	
+}
+
+.FilterBlock h2 {
+	font-size: 23px;
+	line-height: 45px;
+	padding: 42px 0 28px 0;
+	margin: 0;
+	font-weight: 300;
+	font-family: "Gotham", arial;
+}
+
+
+
+.FilterCol {
+	width: 50%;
+	float: left;
+}
+
+	.FilterCol.Left {
+		padding: 0 50% 0 0;
+		position: relative;
+	}
+	
+	.FilterCol.Students {
+		padding: 0;
+		width: 100%;
+	}
+	
+	.FilterCol.Right {
+		position: absolute;
+		right: 0;
+		top: 0;
+		display: none;
+	}
+	
+	.Open .FilterCol.Right {
+		display: block;
+	}
+
+
+.FilterLeft {
+	padding: 7px 25px 3px 50px !important;
+}
+
+	.Students .FilterLeft {
+		/* margin: 12px 50px 0 50px !important; */
+	}
+
+
+.FilterLeft .FilterLi {
+	background: none;
+	padding: 0 0 0 0;
+	font-size: 19px;
+	font-family: "Gotham-N3", Gotham;
+	font-weight: 200;
+	line-height: 30px;
+	margin: 0 0 5px 0;
+	
+	
+}
+
+.FilterLeft .FilterA {
+	background: url(/assets/img/427496/li_item_down.svg) no-repeat -10px 2px transparent;
+	padding: 0 0 0 30px;
+	display: block;
+	color:  white;
+}
+
+	.ie8 .FilterLeft .FilterA {
+		background-image: url(/assets/img/ie/li_item_a.png);
+	}
+
+.FilterRight {
+	margin: 0 50px 0 25px;
+	position: relative;
+}
+
+.SelectField {
+	display: block;
+	position: relative;
+	background: #FFFFFF;
+	margin: 10px 0 0 0;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #8D8B8B /* #C8C5C5  */;
+	padding: 4px 0 9px 25px;
+	overflow: hidden;
+	cursor: pointer;	
+}
+
+	.SelectField.Error {
+		border: 1px solid #B94A48;
+	}
+	
+	.SelectField.Error .SelectValue{
+		color: #B94A48;
+	}
+
+	
+.SelectValue {
+	color: #6A6666;
+	font-family: "Gotham-N3", Gotham;
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 200;
+	
+	white-space: nowrap;
+}
+
+.SelectArrow {
+	background: url(/assets/img/icons.svg) no-repeat -85px -198px #FFFFFF;
+	position: absolute;
+	height: 48px;
+	width: 30px;
+	top: 0;
+	right: 0;
+}
+
+	.ie8 .SelectArrow{
+		background-image: url(/assets/img/ie/icons.png);
+	}
+
+
+	.SelectField.Open .SelectArrow{
+		background-position: -85px -269px;
+	}
+
+.SelectUlWrap {
+	height: 0px;
+	display: none;
+	position: relative;
+	overflow: visible;
+}
+
+.SelectUl {
+	background: #FFFFFF;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid #8D8B8B /* #C8C5C5  */;
+	z-index: 10;
+}
+	
+	.SelectUlWrap.Open {
+		display: block;
+	}
+	
+
+.SelectOption {
+	font-size: 17px;
+	line-height: 30px;
+	padding: 5px 25px 5px 25px;
+	margin: 0;
+	display: block;
+	float: none;
+	clear: both;
+	border-left: 1px solid #8D8B8B /* #C8C5C5  */;
+	border-right: 1px solid #8D8B8B /* #C8C5C5  */;
+	cursor: pointer;
+}
+	
+	.SelectOption:hover {
+		color: #FFFFFF;
+		background: #003650 /* #EBA019  */;
+	}
+	
+	.FilterLi.Open .FilterA{
+		background: url(/assets/img/427496/li_item_a.svg) no-repeat -9px 4px transparent;
+		color: white;
+	}
+	
+	.ie8 .FilterLi.Open .FilterA{
+		background-image: url(/assets/img/ie/li_item_down.png);
+	}
+
+.SelectDecorate {
+	height: 10px;
+	border-left: 1px solid #8D8B8B /* #C8C5C5  */;
+	border-right: 1px solid #8D8B8B /* #C8C5C5  */;
+	display: block;
+	float: none;
+	clear: both;
+}
+	
+.ActionButton.Filter {
+	margin: 30px 0 0 0; 
+}
+
+.Row.Visible {
+	overflow: visible;
+}
+/*==============================================================
+_ Action block 
+================================================================*/
+.ActionBlock {
+	background: #FBA100 /* #EBA019  */; 
+	height: auto;
+	overflow: hidden;
+	margin: 40px 0 45px 0;
+	padding: 45px 50px 40px;
+}
+
+.ActionBlock h3 {
+	color: #FFFFFF;
+	font-family: "Gotham", arial;
+	font-weight: 300;
+	padding: 3px 0 32px 0;
+}
+
+.ActionBlock p {
+	color: #FFFFFF;
+	margin: 0 0 -23px 0;
+}
+
+
+.ActionButton.Form {
+	background: #EE9100;
+	margin: 9px 0 6px 0;
+	padding: 8px 30px 10px;
+	border: 1px solid #DD8800;
+	/* border-bottom: 3px solid #CD7B00; */
+}
+
+	.ActionBlock .FieldLabel {
+		/*float: left;
+		clear: both;*/
+		background: #FFFFFF;
+		margin: 0px 0 20px 0;
+		border: none;
+		padding: 9px 0 11px 25px;
+	}
+
+	
+/*==============================================================
+_ Faq
+================================================================*/
+
+.Faq h3 {
+	font-size: 24px;
+	line-height: 35px;
+	padding: 44px 0 36px 0;
+}	
+
+.Wysiwyg .FaqUl {
+	padding: 0 0 30px 0;
+}
+
+.Wysiwyg .FaqLi {
+	background: none;
+	padding: 0 0 0 0;
+	display: block;
+}
+
+.FaqLi .Question{
+	background: url(/assets/img/427496/li_item_more.svg) no-repeat -10px 2px transparent;
+	display: block;
+	padding: 0 0 0 30px;
+	cursor: pointer;
+}
+
+	.ie8 .FaqLi .Question {
+		background-image: url(/assets/img/ie/li_item_more.png);
+	}
+
+	.FaqLi .Question:hover{
+		color: #427496 /* #EBA019  */;
+	}
+	
+	.FaqLi.Open .Question {
+		background: url(/assets/img/427496/li_item_less.svg) no-repeat -10px 2px transparent;
+	}
+	
+	.ie8 .FaqLi.Open .Question {
+		background-image: url(/assets/img/ie/li_item_less.png);
+	}
+	
+.FaqLi .Answer{
+	display: none;
+	margin: 25px 0 0 30px;
+}
+
+	.FaqLi.Open .Answer{
+		display: block;
+	}
+	
+	.FaqLi.Open .Question{
+		color: #427496 /* #EBA019  */;
+	}
+/*==============================================================
+_ Search 
+================================================================*/
+
+.SearchRow {
+	max-width: 1030px;
+	padding: 0 100px 0 100px;
+}
+
+.SearchLabel {
+	background: #FFFFFF;
+	height: 155px;
+	width: 90%;
+	display: block;
+	float: left;
+	clear: both;
+	position: relative;
+}
+
+.SearchField {
+	color: #FBA100 /* #EBA019  */;
+	font-family: "Gotham-N7", Gotham;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 35px;
+	height: 35px;
+	width: 100%;
+	position: relative;
+	float: left;
+	clear: both;
+	margin: 61px 0 0 0;
+}
+
+	.SearchField.Placeholder{
+		color: #FBA100 /* #EBA019  */;
+	}
+
+.SearchButton {
+	background: url(/assets/img/icons.svg) no-repeat 10px -341px transparent;
+	text-indent: -99999px;
+	position: absolute;
+	right: -10px;
+	top: 45px;
+	height: 55px;
+	width: 55px;
+}
+	.ie8 .SearchButton {
+		background-image: url(/assets/img/ie/icons.png);
+	}	
+
+	.SearchButton:hover {
+		
+	}
+
+
+.SearchFieldWrap {
+	position: relative;
+	overflow: hidden;
+	padding: 35px 0 35px 0;
+}
+
+	.ActionButton.SearchButtond {
+		position: absolute;
+		top: 35px;
+		right: 0;
+		margin: 0;
+	}
+	
+.SearchRow .SearchFieldWrap {
+	padding: 50px 0 50px 0;
+}
+
+	.SearchRow  .ActionButton.SearchButtond {
+		top: 50px;
+	}
+
+.FieldLabel.Search {
+	padding: 8px 110px 10px 25px;
+}
+ 
+/*==============================================================
+_ Search result
+================================================================*/
+
+.SearchResult {
+	display: block;
+	overflow: hidden;
+	margin: 0 0 35px 0;
+}
+
+	.SearchResult h3  {
+	}
+	
+	.SearchResult .ReadMore  {
+		margin: 0 0 0 0;
+	}
+
+.NoResults {
+	margin: 35px 0 0 0;
+}
+
+.NoSearch {
+	padding: 35px 0 47px 0;
+}
+
+/*==============================================================
+_ Img 
+================================================================*/
+
+.ImgWrap {
+    width: 100%;
+    position: relative;
+    display: block;
+    float: left;
+    clear: both;
+    background-color: #EBEAE9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+	.ImgWrap.Home {
+		margin: -40px 0 45px 0;
+		padding: 100px 0;
+	}
+	
+	.ImgWrap.Content {
+		margin: 0px 0 40px 0;
+		padding: 130px 0;
+	}
+
+.ImgFigure {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.FullImage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: -50%;
+	margin: 0 0 0 50%;
+}
+/*==============================================================
+_ Footer 
+================================================================*/
+
+#Footer {
+	background: #EBEAE9;
+	padding: 45px 0 50px 0;
+	margin: 55px 0 0 0;
+}
+
+
+/*==============================================================
+_ Col 
+================================================================*/
+
+.Col {
+	height: auto;
+	padding: 0;
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+	display: block;
+	float: left;
+}
+	
+	.Col.OneOfOne { 
+		width: 100%;
+	}
+	
+	.Col.OneOfTwo { 
+		width: 50%;
+	}
+	
+		.OneOfTwo.Odd {
+			clear: both;
+		}
+	
+	.Col.OneOfThree { 
+		width: 33%; 
+	}
+	
+		.OneOfThree.First{ 
+			clear: both;
+		}
+	
+	.Col.TwoOfThree { 
+		width: 66.66667%;
+	}
+	
+	.Col.OneOfFour {
+		width: 25%
+	}
+	.Col.ThreeOfFour {
+		width: 75%
+	}
+	
+	.Col.OneOfEight {
+		width: 12.5%
+	}
+	.Col.ThreeOfEight {
+		width: 37.5%
+	}
+	.Col.FiveOfEight {
+		width: 62.5%
+	}
+	.Col.SevenOfEight {
+		width: 87.5%
+	}
+	
+	.Col.Center {
+		float: none;
+		clear: both;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.Col.Right {
+		float: right;
+		clear: right;
+	}		
+
+	.Col.SideBar {
+		margin: 15px 0 0 0;
+	}
+
+
+/*==============================================================
+_ Copy 
+================================================================*/
+
+.Copy {
+	
+}
+
+.Copy p {
+	display: none;	
+}
+
+
+
+@media screen and (max-width: 1150px) {
+
+	/*==============================================================
+	_ Global layout and styling
+	================================================================*/
+	body {}
+	/*==============================================================
+	_ Text styling Wysiwyg
+	================================================================*/	
+	/*==============================================================
+	_ Table
+	================================================================*/
+	
+	/*==============================================================
+	_ Link list
+	================================================================*/
+
+	
+	/*==============================================================
+	_ Checklist
+	================================================================*/
+	
+	
+	/*==============================================================
+	_ Header styling
+	================================================================*/
+	
+	.Scroll .PhoneNumber {
+	    background: none;
+	    padding: 32px 50px 33px 50px;
+	}
+	
+	/*==============================================================
+	_ Dropdown
+	================================================================*/
+	/*==============================================================
+	_ Form 
+	================================================================*/
+	/*==============================================================
+	_ Filterblock
+	================================================================*/
+	
+	/*==============================================================
+	_ Action block 
+	================================================================*/
+	/*==============================================================
+	_ Faq
+	================================================================*/
+	/*==============================================================
+	_ Search
+	================================================================*/
+	/*==============================================================
+	_ Search result
+	================================================================*/
+	/*==============================================================
+	_ Img 
+	================================================================*/
+	/*==============================================================
+	_ Footer 
+	================================================================*/
+	/*==============================================================
+	_ Col 
+	================================================================*/
+	
+	
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+
+	/*==============================================================
+	_ Global layout and styling
+	================================================================*/
+	
+	body { 
+	    background: #FFFFFF  center -78px no-repeat; 
+	    color: #6A6666; 
+	    font-family: "Gotham-N3", Gotham; 
+	    font-size:19px;
+	    font-weight: 300; 
+	    line-height:30px; 
+	    text-align: left; 
+	    position: relative;
+	    
+	}
+	
+	
+	.feed {
+		font-size: 5px;
+	}
+	
+	.Row {
+		max-width: 800px;
+		padding: 0 50px;
+	}
+	
+	.Wrap.BodyWrap {
+		padding: 160px 0 0 0; /* 240 + 42 voor text */	
+	}
+	
+	.Wrap.BodyWrapImg {
+		padding: 120px 0 0 0; /* 240 + 42 voor text */	
+	}
+	
+	/*==============================================================
+	_ Text styling Wysiwyg
+	================================================================*/	
+	
+	/* Uitgezelt
+	h2, h3, h4, h5, h6, .Heading {
+		color: #FBA100;
+		font-family: "Gotham-N7", Gotham;
+		font-weight: 700;
+		height: auto;
+		overflow: hidden;
+		width: 100%;
+		margin: 0;
+		float: left;
+		clear: both;
+		display: block;
+	}
+	
+	.Wysiwyg h2 {
+			font-size: 34px;
+			line-height: 45px;
+			padding: 25px 0 35px 0;
+	}
+	
+		.Wysiwyg h2.DoubleHeader {
+			padding: 25px 0 35px 0;
+		}
+	
+	.Wysiwyg h3 {
+			font-size: 22px;
+			line-height: 40px;
+			padding: 20px 0 25px 0;
+	}*/
+	
+	/*==============================================================
+	_ Table
+	================================================================*/
+	
+	/*==============================================================
+	_ Link list
+	================================================================*/
+
+	.Wysiwyg .LinkList {
+		padding: 3px 0 27px 0;
+	}
+
+	
+	/*==============================================================
+	_ Checklist
+	================================================================*/
+	
+	
+
+
+	
+	
+	/*==============================================================
+	_ Header styling
+	================================================================*/
+
+	#Header{
+		height: 120px;
+		box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+	}
+	
+	.ie8 #Header {
+		border-bottom: 1px solid #EBBC67;
+	}
+	
+	.Nav {
+		display: none;
+	}
+	
+	.TotalDarkness {
+		display: none !important;
+	}
+	
+	.MobileHeader {
+		display: block;
+	}
+	
+	
+		.HeaderRow {
+			position: relative;
+			max-width: 800px;
+			height: auto;
+			overflow: hidden;
+			margin: 0 auto;
+			padding: 0 50px 0 50px;
+		}
+	
+	
+	.MobileLogo {
+		background: url(/assets/img/logo_hulpstation.svg) no-repeat 0 0 transparent;
+		height: 21px;
+		width: 275px;
+		margin: 49px 0 50px 0;
+		display: block;
+		float: left;
+		clear: none;
+		top: 0;
+		position: relative;
+		text-indent: -99999px;
+	}
+	
+	.Burger {
+		height: 40px;
+		width: 40px;
+		display: block;
+		margin: 40px 0 40px 0;
+		background: url(/assets/img/icons.svg) no-repeat 0px -422px;
+		text-indent: -999999px;
+		float: right;
+	}
+		
+	
+	/*==============================================================
+	_ Dropdown
+	================================================================*/
+	
+	.MobileDropDown {
+		background: #FFFFFF;
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		float: left;
+		padding: 65px 0 65px 0;
+		
+		display: none;
+	}
+	
+	.MobileDropDown.Open {
+		display: block;
+	}
+	
+		.MobileUl {
+			width: 50%;
+			float: left;
+			clear: right;
+		}
+		
+		.MobileLi {
+			padding: 0 50px 0 50px;
+		}
+		
+		
+			.MobileLi.Heading {
+				width: auto;
+				padding: 3px 50px 27px 50px;
+			}
+		
+		
+			.MobileLi.Heading a{
+				font-size: 19px;
+				line-height: 30px;
+				color: #FBA100 /* #EBA019  */;
+			}
+		
+		.MobileA {
+			background: url(/assets/img/427496/li_item_a.svg) no-repeat -10px 0px transparent;
+			font-family: "Gotham-N3", Gotham;
+			font-weight: 200;
+			padding: 3px 0 0 30px;
+			margin: 0 0 2px 0;
+			display: block;
+			float: left;
+			clear: both;
+			width: 100%;	
+		}
+	
+	.MobileDarkness {
+		background: rgba(20, 15, 15, 0.7);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	
+	.MobileDarkness.Open {
+		display: block;
+	}
+	
+	/*==============================================================
+	_ Form 
+	================================================================*/
+	/*==============================================================
+	_ Filterblock
+	================================================================*/
+	
+	.FilterBlockWrap {
+		width: 100%;
+	}
+	
+	.FilterBlock h2 {
+		font-size: 28px;
+		line-height: 40px;
+		padding: 45px 0 25px 0;
+		margin: 0;
+	}
+
+	
+	/*==============================================================
+	_ Action block 
+	================================================================*/
+	.ActionBlock {
+		margin-top: 20px;
+	}
+	
+	.ActionBlock h3 {
+		padding: 0 0 30px 0;
+	}
+	
+	/*==============================================================
+	_ Faq
+	================================================================*/
+	/*==============================================================
+	_ Search
+	================================================================*/
+	
+	.SearchFieldWrap {
+		padding-bottom: 45px;
+	}
+	
+	.NoResults {
+		margin-top: 20px;
+	}
+
+	/*==============================================================
+	_ Search result
+	================================================================*/
+	/*==============================================================
+	_ Img 
+	================================================================*/
+	/*==============================================================
+	_ Footer 
+	================================================================*/
+	
+	#Footer {
+		margin: 35px 0 0 0;
+	}
+	
+	/*==============================================================
+	_ Col 
+	================================================================*/
+	.Col.OneOfOne { 
+		width: 100%;
+	}
+	
+	.Col.OneOfTwo { 
+		width: 50%;
+	}
+	
+	.Col.OneOfThree { 
+		width: 100%; 
+	}
+	
+		.OneOfThree.First{ 
+			clear: none;
+		}
+		
+		.OneOfThree.Odd, .OneOfThree.Even{ 
+			width: 50%;
+		}
+		
+		
+		.OneOfThree.Odd {
+			clear: both;
+		}
+	
+	.Col.TwoOfThree { 
+		width: 100%;
+	}
+	
+	.Col.OneOfFour {
+		width: 100%
+	}
+	.Col.ThreeOfFour {
+		width: 100%
+	}
+	
+	.Col.OneOfEight {
+		width: 100%
+	}
+	.Col.ThreeOfEight {
+		width: 100%
+	}
+	.Col.FiveOfEight {
+		width: 100%
+	}
+	.Col.SevenOfEight {
+		width: 100%
+	}
+	
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+
+	
+	.FilterCol {
+		width: 100%;
+	}
+	
+		.FilterCol.Left {
+			padding: 0 0 0 0;
+		}
+		
+		.FilterCol.Students {
+			padding: 0;
+			width: 100%;
+		}
+		
+		.FilterCol.Right {
+			position: relative;
+			display: none;
+			width: 100%;
+			
+			padding: 0 0 35px 0;
+		}
+		
+		.Open .FilterCol.Right {
+			display: block;
+		}
+	
+	
+	.FilterLeft {
+		padding: 7px 50px 3px 50px !important;	
+	}
+	
+	.FilterLeft .FilterLi {
+		display: block;
+		float: left;
+		clear: both;
+		background: none;
+		width: 100%;
+	}
+	
+	.FilterLeft .FilterA {
+		/*background: url(/assets/img/427496/li_item_a.svg) no-repeat -10px 3px transparent;*/
+		padding: 0 0 0 30px;
+		display: block;
+	}
+	
+	.FilterRight {
+		margin: 0 0 0 0;
+		position: relative;
+	}
+	
+	.SelectField {
+		margin: 35px 0 0 0;	
+	}
+	
+		
+	.SelectValue {
+		
+		white-space: nowrap;
+	}
+	
+		
+		.SelectUlWrap.Open {
+			display: block;
+		}
+		
+	
+	.ActionButton.Filter {
+		margin: 20px 0 0px 0; 
+	}
+	
+	
+	/*==============================================================
+	_ Col 
+	================================================================*/
+	
+		.Col.OneOfOne { 
+			width: 100%;
+		}
+		
+		.Col.OneOfTwo { 
+			width: 100%;
+		}
+		
+		.FormWrap .Col.OneOfTwo { 
+			width: 50%;
+		}
+		
+		.Col.OneOfThree { 
+			width: 100%; 
+		}
+		
+		.Col.TwoOfThree { 
+			width: 100%;
+		}
+		
+		.Col.OneOfFour {
+			width: 100%;
+		}
+		.Col.ThreeOfFour {
+			width: 100%;
+		}
+		
+		.Col.OneOfEight {
+			width: 100%;
+		}
+		.Col.ThreeOfEight {
+			width: 100%;
+		}
+		.Col.FiveOfEight {
+			width: 100%;
+		}
+		.Col.SevenOfEight {
+			width: 100%;
+		}
+}
+
+
+@media screen and (max-width: 700px) {
+	
+	.FormWrap .Col.OneOfTwo { 
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+	/*==============================================================
+	_ Global layout and styling
+	================================================================*/
+	
+		body { 
+		    font-size:17px;
+		    line-height:25px;
+		    
+		}
+	
+		.Row {
+			padding: 0 0px;
+		}
+		
+		.BorderSpace {
+			margin: 0 40px;
+		}
+		
+		.Wrap.BodyWrap {
+			padding: 130px 0 0 0; /* 240 + 42 voor text */	
+		}
+		
+		.Wrap.BodyWrapImg {
+			padding: 100px 0 0 0; /* 240 + 42 voor text */	
+		}
+	
+	/*==============================================================
+	_ Text styling Wysiwyg
+	================================================================*/
+	
+	.Wysiwyg h2 {
+		font-size: 22px;
+		line-height: 30px;
+		padding: 32px 0 28px 0;
+	}
+	
+		.Wysiwyg h2.DoubleHeader {
+			padding: 32px 0 28px 0;
+		}
+	
+	.Wysiwyg h3 {
+		font-size: 20px;
+		line-height: 30px;
+		padding: 28px 0 22px 0;
+	}
+	
+	.Wysiwyg p {
+		padding: 6px 0 24px 0;
+	}
+	
+	.Wysiwyg ul {
+		padding: 6px 0 19px 25px;
+	}
+	
+	.Wysiwyg .OneOfThree ul {
+		padding: 6px 0 19px 0;
+	}
+	
+	.Wysiwyg li{
+		background-position: -10px 2px;
+	}
+	
+	.Wysiwyg .Quote{
+		font-size: 19px;
+		line-height: 30px;
+		padding: 45px 30px 15px 30px;
+		margin: 10px 0 40px 0;
+	}
+	
+	
+	/* nog kijken */
+	
+	.Wysiwyg .ReadMore {
+		font-family: "Gotham-N3", Gotham;
+		font-weight: 200;
+		height: auto;
+		overflow: hidden;
+		margin: 4px 0 31px 0;
+		display: inline-block;
+		float: left;
+		clear: right;
+		background: url(/assets/img/427496/li_item_a.svg) no-repeat -10px 2px transparent;
+		padding: 0 0 0 30px;
+	}
+	
+	.ActionButton,  .LinkList .ActionButton{
+		font-size: 15px;
+		padding: 4px 20px 6px;
+	}
+	
+	/*==============================================================
+	_ Table
+	================================================================*/
+	
+	.Wysiwyg table {
+		margin: 0 0 40px 0;
+		border-top: 15px solid #FFFFFF;
+	}
+	
+	.Wysiwyg td, .Wysiwyg th {
+		font-size: 16px;
+		line-height: 25px;
+	}
+	
+	.Wysiwyg table td span {
+		padding: 19px 25px 18px 25px;
+	}
+	
+	.Wysiwyg table th span {
+		padding: 20px 25px 17px 25px;
+	}
+	
+	/*==============================================================
+	_ Link list
+	================================================================*/
+	.Wysiwyg .LinkList {
+		padding:  6px 0 19px 0;
+	}
+	
+	.LinkList li {
+		background: none;
+		padding: 0 0 0 0;
+	}
+	
+	.LinkList a {
+		background-position: -10px 0px;
+		padding: 0 0 0 30px;
+	}
+	
+	
+	/*==============================================================
+	_ Checklist
+	================================================================*/
+	
+	.Wysiwyg .Checklist {
+		padding: 6px 0 19px 0;
+	}
+	
+	.Checklist li {
+		background-position: -10px 1px;
+		padding: 0 0 0 30px;
+	}
+	
+	/*==============================================================
+	_ Header styling
+	================================================================*/
+	
+	.HeaderRow {
+		position: relative;
+		max-width: 800px;
+		height: auto;
+		overflow: hidden;
+		margin: 0 auto;
+		padding: 0 0 0 0;
+	}
+	
+	
+	#Header{
+		height: 100px;
+	}
+	
+	.MobileLogo {
+		margin: 39px 0 40px 0;
+		top: 0;
+	}
+	
+	.Burger {
+		margin: 30px 0 30px 0;
+		float: right;
+	}
+	
+	
+	/*==============================================================
+	_ Dropdown
+	================================================================*/	
+	
+	.MobileDropDown {
+		padding: 15px 0 65px 0;
+	}
+	
+	.MobileUl {
+		width: 100%;
+	}
+	
+		.MobileLi.Heading {
+			padding: 48px 40px 22px 40px;
+		}
+		
+		.MobileLi {
+			padding: 0 40px 0 40px;
+		}	
+		
+	/*==============================================================
+	_ Form 
+	================================================================*/
+	
+	.FieldWrap .FieldLabel {
+		margin: 0 0 20px 0;
+	}
+	
+	.Field {
+		font-size: 15px;
+		line-height: 30px;
+	}
+	
+		.Field.Input {
+			margin: 0;
+			height: 30px;
+			width: 100%;
+		}
+		
+		.Field.Placeholder{
+			color: #747070;
+		}
+		
+		.Field.Textarea {
+			margin: 0;
+			height: 271px;
+			width: 100%;
+		}
+		
+	
+	.FieldLabel {
+		padding: 3px 0 5px 20px;
+	}
+	
+		.FieldLabel.Textarea {
+			padding: 6px 0 2px 20px;
+			margin: 10px 0 20px 0;
+		}
+		
+		.FieldLabel.Error {
+			border: 1px solid #B94A48;
+			padding: 4px 0 4px 20px;
+		}
+		
+		.FieldLabel.Error .Field{
+			color: #B94A48;
+		}
+		
+	.FieldWrap{
+		padding: 0px 0 20px 0;
+	}
+	
+	.FieldWrap .OneOfTwo p{
+		margin: 0 0 0 0;
+		padding: 4px 0 16px 0;
+	}
+	
+	.Form .SelectField {		
+		margin: 30px 0 0 0;
+	}
+
+	
+	
+	
+	/*==============================================================
+	_ Filterblock
+	================================================================*/
+	
+	
+	.FilterCol {
+		width: 100%;
+	}
+	
+		.FilterCol.Left {
+			padding: 0 0 0 0;
+		}
+		
+		.FilterCol.Students {
+			padding: 0;
+			width: 100%;
+		}
+		
+		.FilterCol.Right {
+			position: relative;
+			display: none;
+			width: 100%;
+			
+			padding: 1px 0 34px 0
+		}
+		
+		.Open .FilterCol.Right {
+			display: block;
+		}
+	
+	
+	.FilterLeft .FilterLi {
+		display: block;
+		float: left;
+		clear: both;
+		background: none;
+		font-size: 17px;
+		line-height: 25px;
+		margin: 2px 0 3px 0;
+		width: 100%;
+	}
+	
+	.FilterLeft .FilterA {
+		background: url(/assets/img/427496/li_item_down.svg) no-repeat -10px 0px transparent;
+		padding: 0 0 0 30px;
+		display: block;
+		
+	}
+	
+	.FilterLi.Open .FilterA {
+		background-position: -9px 0px;
+	}
+	
+	.FilterRight {
+		margin: 0 0 0 0;
+		position: relative;
+	}
+	
+	.SelectField {
+		margin: 40px 0 0 0;	
+	}	
+		
+	.SelectUlWrap.Open {
+		display: block;
+	}
+		
+		
+		
+	
+	.FilterBlock {
+		padding: 0 0 55px 0;	
+		border-bottom: 1px solid #8D8B8B;
+	}
+	
+	
+	.ImgWrap.Home {
+		padding: 0;
+	}
+	
+	.FilterBlockWrap{}
+	
+	.BorderSpace.FilterSpace {
+		margin: 0 0;
+	}
+	
+	.FilterBlock h2 {
+		font-size: 23px;
+		line-height: 30px;
+		padding: 72px 0 28px 0;
+	}
+	
+	.FilterLeft {
+		padding: 14px 40px 0px 40px !important;	
+	}
+	
+	
+	.SelectField {	
+		font-size: 15px;	
+		margin: 30px 0 0 0;
+		padding: 3px 0 5px 20px;
+	}
+	
+	.SelectValue {
+		font-size: 15px;
+	}
+	
+	
+	.SelectArrow {
+		background-position: -85px -203px;
+	}
+
+	.SelectField.Open .SelectArrow{
+		background-position: -85px -273px;
+	}
+
+	
+	
+	.SelectOption {
+		font-size: 15px;
+		line-height: 25px;
+		padding: 5px 20px 5px 20px;
+	}
+	
+	.ActionButton.Filter {
+		margin: 20px 0 0 0; 
+	}
+	
+	
+	.BorderSpace.FilterStudent {
+		margin: 0;
+	}
+	
+	/*==============================================================
+	_ Action block 
+	================================================================*/
+	
+	.ActionBlock {
+		margin: 30px 0 45px 0;
+		padding: 40px 30px 38px;
+	}
+	
+	.ActionBlock h3 {
+		color: #FFFFFF;
+		font-family: "Gotham", arial;
+		font-weight: 300;
+		padding: 3px 0 27px 0;
+	}
+	
+	.ActionButton.Form {
+		background: #EE9100;
+		margin: 9px 0 6px 0;
+		padding: 4px 20px 5px;
+		border: 1px solid #DD8800;
+		font-size: 15px;
+		/* border-bottom: 3px solid #CD7B00; */
+	}
+	
+		.ActionBlock .FieldLabel {
+			/*float: left;
+			clear: both;*/
+			background: #FFFFFF;
+			margin: 0px 0 20px 0;
+			border: none;
+			padding: 4px 0 6px 20px;
+			font-size: 15px;
+		}
+	/*==============================================================
+	_ Faq
+	================================================================*/
+	/*==============================================================
+	_ Search
+	================================================================*/
+	
+	.SearchFieldWrap {
+		padding: 20px 0 20px 0;
+	}
+	
+		.ActionButton.SearchButtond {
+			position: absolute;
+			top: 20px;
+			right: 0;
+			margin: 0;
+		}
+		
+	.SearchRow .SearchFieldWrap {
+		padding: 40px 0 40px 0;
+	}
+	
+		.SearchRow  .ActionButton.SearchButtond {
+			top: 20px;
+		}
+	
+	.FieldLabel.Search {
+		padding: 3px 110px 5px 20px;
+	}
+		
+	/*==============================================================
+	_ Search result
+	================================================================*/
+	
+	.SearchResult {
+		display: block;
+		overflow: hidden;
+		margin: 0 0 26px 0;
+	}
+		
+		.SearchResult .ReadMore  {
+			margin: 4px 0 0 0;
+		}
+	
+	.NoResults {
+		margin: 30px 0 0 0;
+	}
+	
+
+	/*==============================================================
+	_ Img 
+	================================================================*/
+	
+	
+	.ImgWrap.Content {
+		padding: 80px 0;
+	}
+	
+	/*==============================================================
+	_ Footer 
+	================================================================*/
+	
+	#Footer {
+		margin: 45px 0 0 0;
+	}
+	
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+	/*==============================================================
+	_ Global layout and styling
+	================================================================*/
+	
+	body { 
+	    font-size:14px;
+	    line-height:25px;
+	    
+	}
+	
+	/*==============================================================
+	_ Text styling Wysiwyg
+	================================================================*/
+
+
+	.Wysiwyg h2 {
+		font-size: 22px;
+		line-height: 30px;
+		padding: 32px 0 28px 0;
+	}
+	
+		.Wysiwyg h2.DoubleHeader {
+			padding: 32px 0 28px 0;
+		}
+	
+	.Wysiwyg h3 {
+		font-size: 20px;
+		line-height: 30px;
+		padding: 28px 0 22px 0;
+	}
+	
+	.Wysiwyg p {
+		padding: 6px 0 24px 0;
+	}
+	
+	.Wysiwyg ul {
+		padding: 6px 0 19px 25px;
+	}
+	
+	.Wysiwyg .OneOfThree ul {
+		padding: 6px 0 19px 0;
+	}
+	
+	.Wysiwyg li{
+		background-position: -10px 2px;
+	}
+	
+	.Wysiwyg .Quote{
+		font-size: 14px;
+		line-height: 20px;
+		padding: 30px 30px 5px 30px;
+		margin: 10px 0 40px 0;
+	}
+	
+	.Wysiwyg .Quote Li{
+		background-position: -10px -2px;
+	}
+
+	
+	
+	/* nog kijken */
+	
+	.Wysiwyg .ReadMore {
+		font-family: "Gotham-N3", Gotham;
+		font-weight: 200;
+		height: auto;
+		overflow: hidden;
+		margin: 4px 0 31px 0;
+		display: inline-block;
+		float: left;
+		clear: right;
+		background: url(/assets/img/427496/li_item_a.svg) no-repeat -10px -2px transparent;
+		padding: 0 0 0 30px;
+	}
+	
+	.ActionButton,  .LinkList .ActionButton{
+		font-size: 14px;
+		padding: 4px 20px 6px;
+	}
+
+
+
+	
+	h2, h3, h4, h5, h6, .Heading {
+	}
+	
+
+	
+	.Wysiwyg ul {
+		padding: 4px 0 21px 0;
+	}
+	
+	.Wysiwyg .OneOfThree ul {
+		padding: 4px 0 21px 0;
+	}
+	
+	
+	
+	/*==============================================================
+	_ Table
+	================================================================*/
+	
+	
+	/*==============================================================
+	_ Link list
+	================================================================*/
+	
+	
+	
+	/*==============================================================
+	_ Checklist
+	================================================================*/
+	
+	
+	/*==============================================================
+	_ Header styling
+	================================================================*/
+	
+	.MobileLogo {
+		width: 50px;
+	}
+	
+	
+	/*==============================================================
+	_ Dropdown
+	================================================================*/
+	
+		
+		
+
+	/*==============================================================
+	_ Form 
+	================================================================*/
+	
+	/*==============================================================
+	_ Filterblock
+	================================================================*/
+	
+	
+	.FilterCol {
+		width: 100%;
+	}
+	
+		.FilterCol.Left {
+			padding: 0 0 0 0;
+		}
+		
+		.FilterCol.Students {
+			padding: 0;
+			width: 100%;
+		}
+		
+		.FilterCol.Right {
+			position: relative;
+			display: none;
+			width: 100%;
+			
+			padding: 1px 0 34px 0
+		}
+		
+		.Open .FilterCol.Right {
+			display: block;
+		}
+	
+	
+	.FilterLeft .FilterLi {
+		display: block;
+		float: left;
+		clear: both;
+		background: none;
+		font-size: 14px;
+		line-height: 25px;
+		margin: 2px 0 3px 0;
+		width: 100%;
+	
+	}
+	
+	.FilterLeft .FilterA {
+		background: url(/assets/img/427496/li_item_down.svg) no-repeat -10px -2px transparent;
+		padding: 0 0 0 30px;
+		display: block;
+	}
+	
+	.FilterLi.Open .FilterA {
+		background-position: -10px -2px;
+	}
+	
+	.FilterRight {
+		margin: 0 0 0 0;
+		position: relative;
+	}
+	
+	.SelectField {
+		margin: 40px 0 0 0;	
+	}	
+		
+	.SelectUlWrap.Open {
+		display: block;
+	}
+		
+		
+		
+	
+	.FilterBlock {
+		padding: 0 0 55px 0;	
+		border-bottom: 1px solid #8D8B8B;
+	}
+	
+	
+	.ImgWrap.Home {
+		padding: 0;
+	}
+	
+	.FilterBlockWrap{}
+	
+	.BorderSpace.FilterSpace {
+		margin: 0 0;
+	}
+	
+	.FilterBlock h2 {
+		font-size: 23px;
+		line-height: 30px;
+		padding: 72px 0 28px 0;
+	}
+	
+	.FilterLeft {
+		padding: 14px 40px 0px 40px !important;	
+	}
+	
+	
+	.SelectField {	
+		font-size: 15px;	
+		margin: 30px 0 0 0;
+		padding: 3px 0 5px 20px;
+	}
+	
+	.SelectValue {
+		font-size: 14px;
+	}
+	
+	
+	.SelectArrow {
+		background-position: -85px -203px;
+	}
+
+	.SelectField.Open .SelectArrow{
+		background-position: -85px -273px;
+	}
+
+	
+	
+	.SelectOption {
+		font-size: 14px;
+		line-height: 25px;
+		padding: 5px 20px 5px 20px;
+	}
+	
+	.ActionButton.Filter {
+		margin: 20px 0 0 0; 
+	}
+	
+	
+	.BorderSpace.FilterStudent {
+		margin: 0;
+	}
+	
+
+	
+	/*==============================================================
+	_ Action block 
+	================================================================*/
+	
+	.ActionBlock {
+		margin: 30px 0 45px 0;
+		padding: 15px 30px 28px;
+	}
+	
+	/*==============================================================
+	Ino toevoegingen
+	================================================================*/
+
+	
+	/*==============================================================
+	_ Faq
+	================================================================*/
+	/*==============================================================
+	_ Search
+	================================================================*/
+	
+	
+	
+	/*==============================================================
+	_ Search result
+	================================================================*/
+	/*==============================================================
+	_ Img 
+	================================================================*/
+	
+	
+	/*==============================================================
+	_ Footer 
+	================================================================*/
+	/*==============================================================
+	_ Col 
+	================================================================*/
+
+
+}
+
+
+/*==============================================================================================
+Ie9 Fix  
+================================================================================================*/
+.trident .body { 	    
+}
+		
+.trident .Wysiwyg .ReadMore {
+}
+
+
+.trident .SelectValue {
+}
+
